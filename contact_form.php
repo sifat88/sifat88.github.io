@@ -5,7 +5,7 @@
         $email = $_POST['email'];
         $mes = $_POST['message'];
         // put your own email for contact information
-        $to = "imxakar@gmail.com";
+        $to = "rakibulislam8sifat@gmail.com";
         $subject = ' Contact Form Message';
         $message = '<b>Name :</b> '.$name.'<br><br><b>Email :</b> '.$email.'<br><br> '.$sub.'<br><br><P><h3>Message :</h3> '.$mes.'</P>';
         $headers .= 'X-Mailer: PHP'. phpversion() . "\r\n";

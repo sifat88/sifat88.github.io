@@ -294,7 +294,7 @@ Main-content
 .welcome-quote {
     display: block;
     margin: 30px 0px;
-    text-emphasis: center;
+    text-align: center;
 }
 .welcome-quote img{
     margin: 0 auto;
