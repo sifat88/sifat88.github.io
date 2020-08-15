@@ -294,6 +294,10 @@ Main-content
 .welcome-quote {
     display: block;
     margin: 30px 0px;
+    text-emphasis: center;
+}
+.welcome-quote img{
+    margin: 0 auto;
 }
 .welcome-form .form-control {
     display: inline-block;
