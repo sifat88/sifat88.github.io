@@ -1,0 +1,556 @@
+/*=========================================
+           For laptop
+============================================*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /*first brackets*/
+   
+.site-contact ul li a {
+    font-size: 16px;
+}  
+.login-cta .btn, .signup-cta .btn {
+    font-size: 16px;
+    padding: 8px 30px;
+} 
+.main-nav .navbar-nav>li>a {
+    font-size: 16px;
+}
+.form-content ul li p, .form-content ul li span {
+    font-size: 16px;
+}   
+.search-cta .btn {
+    font-size: 18px;
+    padding: 8px 35px;
+}
+.search-heading h2 {
+    font-size: 40px;
+}   
+.footer-right ul li a {
+    font-size: 18px;
+}
+.footer-right ul li a i {
+    font-size: 20px;
+}
+.footer-right ul {
+    padding-left: 50px;
+}
+    
+/*---- From css -------*/
+.registration-from .form-horizontal .control-label {
+    padding-left: 30px;
+    font-size: 16px;
+}   
+.registration-from form .form-control, .registration-from form .help-block, .term-block {
+    font-size: 14px;
+}
+.registration-from form .radio-inline {
+    font-size: 16px;
+}
+.registration-from form .radio-inline input[type=radio] {
+    margin-top: 5px;
+}
+.registration-from form .term-block p {
+    font-size: 14px;
+    margin-top: 14px;
+}
+.registration-from .btn {
+    font-size: 18px;
+}
+    /*last-brackets*/
+}
+
+
+/*=========================================
+           For tablets
+============================================*/
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+   /*first brackets*/
+
+header {
+    padding: 10px 0px;
+}
+.site-contact ul li a {
+    font-size: 14px;
+} 
+.login-cta .btn, .signup-cta .btn {
+    padding: 4px 30px;
+    font-size: 14px;
+}  
+.main-nav .navbar-nav>li>a {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.main-search-from {
+    width: 360px;
+    z-index: 1;
+    top: 80px;
+}
+.form-content ul li p, .form-content ul li span {
+    font-size: 14px;
+}
+.search-heading h2 {
+    font-size: 28px;
+    line-height: normal;
+    padding-bottom: 15px;
+}    
+.search-heading h2:after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: -2px;
+    width: 100px;
+    height: 100px;
+    background-size: 105px;
+    opacity: 0.3;
+}   
+.search-cta .btn {
+    font-size: 14px;
+    padding: 6px 30px;
+} 
+.single-slide {
+    min-height: 550px;
+}   
+ .section-tittle h2 {
+    font-size: 50px;
+}  
+.process-icon {
+    width: 180px;
+    height: 180px;
+} 
+.process-icon i {
+    font-size: 45px;
+}   
+.single-process h3 {
+    font-size: 28px;
+}
+.single-process p {
+    font-size: 14px;
+}
+.promo-content {
+    width: 50%;
+    margin-left: 20px;
+}   
+.promo-text p {
+    font-size: 50px;
+    line-height: 55px;
+} 
+.single-show {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+.cta-text h2 {
+    font-size: 35px;
+    margin-top: 5px;
+}   
+.big-cta .btn {
+    font-size: 20px;
+}
+.ad-area h1 {
+    font-size: 90px;
+}
+.footer-left, .footer-middle {
+    margin-bottom: 50px;
+    text-align: left;
+}
+.footer-right h3 {
+    text-align: left;
+}
+.footer-right ul {
+    text-align: left;
+    padding-left: 0px;
+}
+    
+/*---- From css -------*/
+.registration-from .form-horizontal .control-label {
+    padding-left: 30px;
+    font-size: 14px;
+}   
+.registration-from form .form-control, .registration-from form .help-block, .term-block {
+    font-size: 14px;
+}
+.registration-from form .radio-inline {
+    font-size: 16px;
+}
+.registration-from form .radio-inline input[type=radio] {
+    margin-top: 5px;
+}
+.registration-from form .term-block p {
+    font-size: 14px;
+    margin-top: 14px;
+}
+.registration-from .btn {
+    font-size: 18px;
+}
+    
+/*---- Profile-details css -------*/  
+.profile-details > h1 {
+    font-size: 30px;
+}
+.verified-member img {
+    width: 70px;
+    height: 70px;
+}
+.verified-member span {
+    padding: 13px 30px;
+    font-size: 16px;
+}
+.primary-info-list ul li, .cmn-list li {
+    font-size: 14px;
+}   
+.primary-info-list ul li p strong {
+    width: 40%;
+}    
+.profile-img img {
+    width: 150px;
+    height: 150px;
+} 
+.profile-interaction-list ul li {
+    width: 100%;
+}
+.profile-interaction-list ul li a {
+    font-size: 14px;
+} 
+.candidate-discription .cmn-list {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.candidate-discription .cmn-list > p {
+    margin-bottom: 14px;
+}
+    /*last-brackets*/ 
+}
+
+
+/*=======================
+For mobile phones:
+========================= */
+
+@media only screen and (max-width: 766px) {
+   /*first brackets*/
+ 
+.header-left {
+    text-align: center;
+}
+.site-contact {
+    text-align: center;
+}   
+.site-contact ul li {
+    margin-bottom: 10px;
+}
+.site-contact ul li a {
+    font-size: 15px;
+}
+.header-right {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.login-cta, .signup-cta {
+    margin: 0px 5px;
+}   
+.login-cta .btn, .signup-cta .btn {
+    padding: 6px 28px;
+    font-size: 16px;
+}
+.main-nav .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.main-nav .navbar-nav>li>a {
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.main-nav .navbar-nav {
+    padding: 10px 0px;
+}
+.main-nav .navbar-header {
+    display: block;
+}
+.main-nav .navbar-brand {
+    padding: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 15px;
+    font-size: 22px;
+    padding-left: 20px;
+}   
+.main-nav .navbar-toggle {
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}    
+.main-nav .navbar-toggle .icon-bar {
+    background-color: #fff;
+}   
+.main-search-from {
+    right: 50%;
+    top: 100px;
+    width: 300px;
+    padding: 20px 20px;
+    margin-right: -150px;
+}  
+.search-heading h2 {
+    font-size: 25px;
+    line-height: 35px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+}   
+.search-heading h2:after {
+    right: 20px;
+    top: 25px;
+    background-size: 70px;
+}  
+.form-content {
+    padding-top: 15px;
+}
+.form-content ul li p, .form-content ul li span {
+    float: none;
+    width: 100%;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.form-content ul li span {
+    margin-top: 8px;
+}
+.form-content ul li span label {
+    margin-right: 20px;
+    display: inline-block;
+}
+.search-cta {
+    padding-top: 10px;
+}
+.search-cta .btn {
+    font-size: 16px;
+    padding: 6px 30px;
+}
+.process-area {
+    padding: 70px 0px 50px;
+    background-image: url(../img/climpek.png);
+    background-repeat: repeat;
+}
+.section-tittle h2 {
+    font-size: 45px;
+}
+.single-process {
+    margin-bottom: 30px;
+}   
+.promo-area {
+    padding: 20px 0px;
+    background-position: center;
+}   
+.promo-content {
+    float: none;
+    width: 100%;
+}
+.promo-text p {
+    font-size: 45px;
+    line-height: 55px;
+}
+.promo-cta .btn {
+    font-size: 22px;
+    padding: 8px 50px;
+}
+.showcase-area {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.single-show {
+    margin-bottom: 30px;
+}
+.showcase-carousel .owl-dots {
+    bottom: -50px;
+    margin-left: -40px;
+}
+.cta-text, .big-cta {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cta-text h2 {
+    font-size: 35px;
+    margin-top: 0px;
+}
+.big-cta .btn {
+    font-size: 25px;
+}
+.ad-area h1 {
+    font-size: 80px;
+}    
+.footer-left, .footer-middle {
+    margin-bottom: 50px;
+    text-align: left;
+}
+.footer-right h3 {
+    text-align: left;
+}
+.footer-left p {
+    font-size: 14px;
+}
+.footer-right ul {
+    text-align: left;
+    padding-left: 0px;
+} 
+.footer-right ul li a {
+    font-size: 16px;
+}
+.footer-right ul li a i {
+    font-size: 18px;
+}
+footer .row {
+    padding-bottom: 40px;
+}
+.footer-copyright {
+    padding-top: 30px;
+}
+.footer-copyright p {
+    font-size: 16px;
+}
+footer {
+    padding-bottom: 30px;
+}
+/*------- from css -------*/
+.registration-from > h2 {
+    font-size: 25px;
+}
+.registration-from form {
+    padding: 0px 35px;
+}
+.nop{
+   padding-right: 0px;
+   padding-left: 0px;     
+}
+.registration-from .form-horizontal .control-label {
+    padding-left: 0px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}   
+.registration-from form .form-control {
+    font-size: 14px;
+    height: 40px;
+}
+.registration-from form .help-block, .term-block{
+    font-size: 12px;
+}
+.registration-from form .radio-inline {
+    font-size: 14px;
+}
+.registration-from form .radio-inline input[type=radio] {
+    margin-top: 5px;
+}
+.registration-from form .term-block p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.registration-from .btn {
+    font-size: 16px;
+}
+.form-group:nth-child(5) .nop {
+    margin-bottom: 20px;
+}
+/*----- profile- form ------*/
+.bg-green h2 {
+    font-size: 22px !important;
+}
+.info {
+    padding: 0px 10px;
+}
+.info h3 {
+    font-size: 16px;
+}
+.all-info form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.profile-btn .btn {
+    padding: 6px 40px;
+    font-size: 18px;
+}
+.details-info form .form-control {
+    height: 125px;
+}
+    
+    
+/*---- Profile-details css -------*/   
+.primary-details {
+    padding: 50px 10px 20px;
+}
+.profile-details > h1 {
+    font-size: 22px;
+} 
+.primary-info-list > h3 {
+    font-size: 18px;
+}
+.verified-member {
+    text-align: center;
+    padding: 0px 30px;
+    padding-top: 20px;
+}
+.verified-member img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.verified-member span {
+    padding: 10px 25px;
+    font-size: 14px;
+}
+.primary-info-list ul li, .cmn-list li {
+    font-size: 14px;
+}   
+.primary-info-list ul li p strong {
+    width: 55%;
+}   
+.profile-img img {
+    width: 150px;
+    height: 150px;
+} 
+.profile-interaction-list {
+    padding: 0px 10px;
+}
+.profile-interaction-list ul li {
+    width: 100%;
+}
+.profile-interaction-list ul li a {
+    font-size: 14px;
+    padding: 13px 0px;
+}
+.cmn-list li p strong {
+    width: 50%;
+}
+.cmn-heading {
+    font-size: 18px;
+}
+.candidate-discription .cmn-list {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.candidate-discription .cmn-list > p {
+    margin-bottom: 14px;
+}     
+    /*last-brackets*/ 
+}
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+    /*first brackets*/
+.main-search-from {
+    right: 50%;
+    top: 100px;
+    width: 400px;
+    padding: 20px 20px;
+    margin-right: -200px;
+}
+.single-process, .single-show {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*---- Profile-details css -------*/  
+.primary-info-list ul li p strong, .cmn-list li p strong {
+    width: 35%;
+}
+    /*last-brackets*/
+}

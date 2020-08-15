@@ -1,0 +1,33 @@
+/*=======================
+For mobile phones:
+========================= */
+
+@media only screen and (max-width: 766px) {
+    /*first-brackets*/
+    .welcome {
+        padding-top: 50px;
+    }
+    .my-img img {
+        width: 120px;
+        padding: 3px;
+    }
+    .my-text h1 {
+        font-size: 62px;
+        line-height: 60px;
+        margin-top: 25px;
+    }
+    .nice h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+    /*last-brackets*/
+}
+
+
+/*=======================
+For tablets:
+========================= */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    /*last-brackets*/
+}

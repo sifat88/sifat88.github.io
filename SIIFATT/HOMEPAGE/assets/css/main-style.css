@@ -1,0 +1,184 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author         : sifat_88
+Template Name  : TINIC - One Page Responsive Business Template
+Version        : 1.0                                          
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+ol,
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+/*==============
+ All-Fonts
+=================*/
+
+@font-face {
+    font-family: 'arvoregular';
+    src: url('../fonts/arvo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/arvo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nautilus_pompiliusregular';
+    src: url('../fonts/nautilus-webfont.woff2') format('woff2'),
+         url('../fonts/nautilus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+body {
+    font-family: 'arvoregular' !important;
+}
+i{
+    margin: 0px 5px;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.main-content {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/my-bgg.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.7)), url(../img/my-bgg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 100vh;
+	padding: 20px 0px 40px;
+	text-align: center;
+}
+.welcome h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+	word-spacing: 10px;
+	padding: 50px 0px 70px;
+	color: #000;
+    display: none
+}
+.my-img img {
+	width: 200px;
+	background-color: #dfdfdf;
+	padding: 5px;
+	border-radius: 50%;
+}
+.my-text h1 {
+	font-size: 80px;
+	font-family: 'nautilus_pompiliusregular';
+	color: #dfdfdf;
+    padding-top: 25px;
+}
+.nice h2 {
+	font-size: 40px;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 30px 0px;
+    color: #dfdfdf;
+}
