@@ -89,8 +89,35 @@ var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:1,
     loop:true,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:3000,
     autoplayHoverPause:false,
     nav:true
 });
+
+//============ Toggle menu icon ==========
+const menuIcon = document.querySelector('.navbar-toggler-icon');
+
+const menuFunction = () => {
+  menuIcon.firstChild.classList.toggle("fa-times")
+}
+
+menuIcon.addEventListener('click', menuFunction)
+
+
+
+
+
+//============ Scroll to top ==========
+const myBtn = document.getElementById('mybtn');
+
+const scrollFunction = () => {
+  if( Math.floor(window.scrollY) === 7250){
+    myBtn.classList.add('btn-active')
+  }
+  
+}
+
+window.addEventListener('scroll' , scrollFunction);
+
+
