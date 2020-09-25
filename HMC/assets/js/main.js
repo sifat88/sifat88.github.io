@@ -110,10 +110,14 @@ menuIcon.addEventListener('click', menuFunction)
 
 //============ Scroll to top ==========
 const myBtn = document.getElementById('mybtn');
+const winValue = Math.floor(window.scrollY);
+console.log(winValue)
 
 const scrollFunction = () => {
-  if( Math.floor(window.scrollY) === 7250){
-    myBtn.classList.add('btn-active')
+  console.log(winValue)
+  if( winValue == 7250){
+    myBtn.classList.add("btn-active")
+    console.log(myBtn.classList)
   }
   
 }

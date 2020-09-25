@@ -1,0 +1,248 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    --LimeGreen: hsl(163, 72%, 41%);
+    --BrightRed: hsl(356, 69%, 56%);
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    --YouTube: hsl(348, 97%, 39%);
+
+    /* #### Dark Theme */
+
+    --Very-Dark-Blue: hsl(230, 17%, 14%);
+    --Very-Dark-Blue2: hsl(232, 19%, 15%);
+    --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+    --Desaturated-Blue: hsl(228, 34%, 66%);
+    --White: hsl(0, 0%, 100%);
+
+    /* #### Light Theme */
+
+    --Very-Pale-Blue: hsl(225, 100%, 98%);
+    --Light-Grayish-Blue: hsl(227, 47%, 96%);
+    --Dark-Grayish-Blue: hsl(228, 12%, 44%);
+    --Very-Dark-Blue : hsl(230, 17%, 14%);
+}
+.heading-right > p {
+    font-size: 18px;
+    color: #aaa;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+.heading-right {
+    display: flex;
+    padding-top: 20px;
+}
+.dashboard {
+    margin-top: -120px;
+}
+.dashbox-heading {
+    background-color: var(--Very-Pale-Blue);
+    padding: 50px 0px 150px;
+}
+.dashbox-heading h1 {
+    font-weight: bold;
+    color: hsl(230, 17%, 14%);
+}
+.dashbox-heading p {
+    font-weight: bold;
+    color: hsl(228, 12%, 44%);
+}
+.toggle-slider {
+    background: rgb(59, 174, 188);
+    width: 55px;
+    height: 26px;
+    border-radius: 35px;
+    position: relative;
+    transition: linear 0.4s;
+    cursor: pointer;
+}
+.dark-mode .toggle-slider{
+    background-color: rgb(60, 203, 152);
+}
+.switcher-btn {
+    position: absolute;
+    content: '';
+    left: 2px;
+    top: 2px;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 25px;
+    transition: linear 0.3s;
+}
+.cb {
+    opacity: 0;
+}
+.cb:checked + .switcher-btn {
+    transform: translateX(30px);
+}
+.dashbox-md {
+    background: var(--Very-Pale-Blue);
+    text-align: center;
+    padding: 30px 0px;
+    border-top: 5px solid hsl(208, 92%, 53%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fb{
+    border-color: var(--Facebook);
+}
+.tw{
+    border-color: var(--Twitter);
+}
+.yt{
+    border-color: var(--YouTube);
+}
+.ins{ 
+    border-color: #f09433; 
+    border-color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    border-color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    border-color: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }
+.dashbox-md:hover,
+.user-stat:hover{
+    background: var(--Light-Grayish-Blue);
+}
+.user-name {
+    font-weight: bold;
+}
+.user-name svg {
+    margin-right: 10px;
+}
+.user-followers {
+    margin-top: -10px;
+}
+.user-followers p {
+    color: hsl(228, 12%, 44%);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.user-followers p > span {
+    font-size: 55px;
+    font-weight: 900;
+    display: block;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: -10px;
+    letter-spacing: 0px;
+}
+
+.followers-counts p {
+    margin: 0px;
+    color: var(--LimeGreen);
+}
+.yt .followers-counts p {
+    margin: 0px;
+    color: var(--BrightRed);
+}
+.followers-counts svg {
+    margin-right: 8px;
+}
+.stat-details{
+    margin-top: 60px;
+}
+.stat-details > h3 {
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 30px;
+}
+.user-stat {
+    background-color: var(--Very-Pale-Blue);
+    padding: 20px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.user-stat p {
+    margin: 0px;
+}
+.stat-name,
+.stat-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.stat-count {
+    margin-top: 20px;
+}
+.stat-name:first-child {
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.stat-count p:first-child {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: -8px;
+}
+.stat-count p:last-of-type svg{
+    margin-right: 5px;
+}
+.stat-count p:last-of-type {
+    color: var(--LimeGreen);
+    font-weight: bold;
+    font-size: 13px;
+}
+.stat-count p.rd{
+    color: var(--BrightRed);
+}
+.attribution {
+    padding: 50px 0px 35px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ========== DARK MODE ======== */
+.dark-mode{
+    color: var(--Desaturated-Blue);
+    background-color: var(--Very-Dark-Blue);
+}
+.dark-mode .dashbox-heading{
+    background-color: var(--Very-Dark-Blue2);
+}
+.dark-mode .dashbox-md,
+.dark-mode .user-stat{
+    background: var(--Dark-Desaturated-Blue);
+    transition: linear 0.3s;
+}
+.dark-mode .dashbox-md:hover,
+.dark-mode .user-stat:hover{
+    transform: scale(1.05);
+}
+.dark-mode .dashbox-heading h1,
+.dark-mode .stat-details > h3,
+.dark-mode .user-followers p > span,
+.dark-mode .stat-count p:first-child{
+    color: var(--White);
+}
+.dark-mode .dashbox-heading p,
+.dark-mode .stat-name p{
+     color: var(--Desaturated-Blue);
+}
+/* ======= Responsive CSS */
+@media only screen and (max-width: 376px) { 
+    .dashbox-heading h1 {
+        font-size: 22px;
+    }
+    .heading-right {
+        justify-content: center;
+        width: 100%;
+    }
+    .heading-left {
+        border-bottom: 2px solid rgb(161, 164, 177);
+        width: 100%;
+    }
+    .dashbox-md {
+        margin-bottom: 35px;
+    }
+    .user-stat {
+        margin-bottom: 25px;
+    }
+    .attribution {
+        padding: 50px 0px 35px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
