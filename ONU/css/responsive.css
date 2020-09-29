@@ -1,0 +1,268 @@
+/*=======================
+For mobile phones:
+========================= */
+
+@media only screen and (max-width: 320px) {
+    .menu .navbar-default .navbar-toggle .icon-bar {
+        background-color: #89d47d;
+    }
+    .menu .navbar-brand>img {
+        width: 90px;
+    }
+    .menu .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .menu .navbar-nav {
+        text-align: center;
+    }
+    .menu .nav>li {
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        border: 2px solid #89d47d;
+        margin: 5px 0px;
+        border-radius: 4px;
+    }
+    .welcome-text h1 {
+        font-size: 35px;
+    }
+    .welcome-text h2 {
+        font-size: 17px;
+    }
+    .welcome-text h3 {
+        font-size: 14px;
+    }
+    .about-area {
+        padding: 10px 0px;
+    }
+    .section-tittle p {
+        padding: 0px 10px;
+    }
+    .service-item:hover .hover-icon {
+        bottom: 100px;
+    }
+    .mixitup-control-active {
+        background: #666;
+        color: #89d45d;
+    }
+    .control {
+        width: 30%;
+        margin: 3px 1px;
+        font-size: 10px;
+    }
+    .mix:hover h3 {
+        top: 45%;
+    }
+    .mix h3 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .pricing-item {
+        width: 75%;
+        display: block;
+        margin: 25px auto 0;
+    }
+    .project-status {
+        margin-top: 30px;
+    }
+    .footer-area {
+        text-align: center;
+    }
+    /*last-brackets*/
+}
+
+
+/*=======================
+For mobile phones(landscape):
+========================= */
+
+@media only screen and (min-width: 330px) and (max-width: 360px) {
+    .menu .navbar-default .navbar-toggle .icon-bar {
+        background-color: #89d47d;
+    }
+    .menu .navbar-brand>img {
+        width: 90px;
+    }
+    .menu .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .menu .navbar-nav {
+        text-align: center;
+    }
+    .menu .nav>li {
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        border: 2px solid #89d47d;
+        margin: 5px 0px;
+        border-radius: 4px;
+    }
+    .welcome-text h1 {
+        font-size: 35px;
+    }
+    .welcome-text h2 {
+        font-size: 17px;
+    }
+    .welcome-text h3 {
+        font-size: 14px;
+    }
+    .about-area {
+        padding: 10px 0px;
+    }
+    .section-tittle p {
+        padding: 0px 10px;
+    }
+    .service-item:hover .hover-icon {
+        bottom: 100px;
+    }
+    .mixitup-control-active {
+        background: #666;
+        color: #89d45d;
+    }
+    .control {
+        width: 30%;
+        margin: 3px 1px;
+        font-size: 10px;
+    }
+    .mix:hover h3 {
+        top: 45%;
+    }
+    .mix h3 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .pricing-item {
+        width: 75%;
+        display: block;
+        margin: 25px auto 0;
+    }
+    .project-status {
+        margin-top: 30px;
+    }
+    .footer-area {
+        text-align: center;
+    }   
+    /*last-brackets*/
+}
+
+
+/*=======================
+For large mobile phones:
+========================= */
+
+@media only screen and (max-device-width: 330px) and (orientation: landscape) {
+    .menu .navbar-default .navbar-toggle .icon-bar {
+        background-color: #89d47d;
+    }
+    .menu .navbar-brand>img {
+        width: 90px;
+    }
+    .menu .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .menu .navbar-nav {
+        text-align: center;
+    }
+    .menu .nav>li {
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        border: 2px solid #89d47d;
+        margin: 5px 0px;
+        border-radius: 4px;
+    }
+    .welcome-text h1 {
+        font-size: 35px;
+    }
+    .welcome-text h2 {
+        font-size: 17px;
+    }
+    .welcome-text h3 {
+        font-size: 14px;
+    }
+    .about-area {
+        padding: 10px 0px;
+    }
+    .section-tittle p {
+        padding: 0px 10px;
+    }
+    .service-item:hover .hover-icon {
+        bottom: 100px;
+    }
+    .mixitup-control-active {
+        background: #666;
+        color: #89d45d;
+    }
+    .control {
+        width: 30%;
+        margin: 3px 1px;
+        font-size: 10px;
+    }
+    .mix:hover h3 {
+        top: 45%;
+    }
+    .mix h3 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .pricing-item {
+        width: 75%;
+        display: block;
+        margin: 25px auto 0;
+    }
+    .project-status {
+        margin-top: 30px;
+    }
+    .footer-area {
+        text-align: center;
+    }
+    /*last-brackets*/
+}
+
+
+/*=======================
+For tablets:
+========================= */
+
+@media only screen and (min-width: 420px) and (max-width: 768px) {
+    .menu .navbar-header {
+	float: none;
+}
+    .menu .navbar-brand {
+	width: 100%;
+}
+    .menu {
+	margin-top: 0px;
+}
+    .menu .navbar-brand > img {
+	display: block;
+	width: 110px;
+	margin: 5px auto;
+}
+    .menu .navbar-right {
+	float: none;
+    text-align: center;
+}
+    .menu .nav > li > a {
+	padding: 15px 10px 5px;
+}
+    .service-item:hover .hover-icon {
+	bottom: 40%;
+}
+    .control {
+	width: 30%;
+	font-size: 20px;
+	margin: 5px;
+}
+    .pricing-item {
+	width: 80%;
+	margin: 10px auto;
+}
+    .project-status {
+	margin-top: 30px;
+}
+    /*last-brackets*/
+}

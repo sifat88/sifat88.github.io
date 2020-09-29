@@ -1,0 +1,153 @@
+/*=======================
+For mobile phones:
+========================= */
+
+@media only screen and (max-width: 766px) {
+
+.welcome_area {
+	padding: 150px 0px 100px;
+	background-attachment: fixed;
+}
+.log, .reg {
+	width: 62%;
+}
+.reg {
+	margin-right: -10%;
+}
+.log {
+	margin-left: -10%;
+}
+.signupSection {
+	width: 100%;
+}
+.signupForm {
+	width: 100%;
+}
+.select_domain .cmn-brdr {
+	width: 20%;
+}
+.select_domain input[type="text"] {
+	width: 60%;
+}
+    .select_domain .brdr {
+	width: 20%;
+}
+    .nice-select {
+	padding-left: 8px;
+	padding-right: 22px;
+        background: none;
+}
+.domain_details ul {
+	display: inline-block;
+	width: 49%;
+}
+.domain_details ul li {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #d7d7d7;
+}
+    .domain_details ul li:last-of-type {
+	border-bottom: none;
+}
+.domain_details ul:last-of-type li::before {
+	content: '';
+	position: absolute;
+	background: none;
+	top: 0px;
+	left: 0px;
+	height: 0px;
+	width: 0px;
+}
+.package_section,.package_section::before,.all-package {
+	position: static;
+	background-attachment: fixed;
+}
+    .all-package{
+        margin:auto;
+    }
+    .package {
+	width: 85%;
+	margin: 30px auto;
+}
+    .blank_section {
+	min-height: 30px;
+}
+    .about {
+	padding: 0px 30px;
+}
+    .about_section .container {
+	padding: 10px 0px;
+}
+    .team-member img {
+	max-width: 120px;
+	margin: 10px auto;
+}
+    .team-member {
+	padding: 10px 0px;
+}
+    .team-member ul {
+	display: block;
+	width: 50%;
+	margin: 10px auto 0px;
+}
+.footer-item-one {
+	margin-bottom: 30px;
+}
+.footer-item-four {
+	margin-top: 30px;
+}
+    /*last-brackets*/
+}
+
+
+
+/*=======================
+For tablets:
+========================= */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+.select_domain{
+	width: 90%;
+	margin: 0 auto;
+}
+.domain_details{
+    width: 90%;
+    margin: 50px auto 0px;
+}
+.package_section{
+        
+}
+.all-package {
+	position: static;
+	top: 0%; 
+	width: 90%;
+	left: 0%; 
+	margin: 0%; 
+	margin: 20px auto;
+}
+.package {
+	margin: 20px 0px;
+}
+.blank_section {
+	display: none !important;
+}
+.about-team {
+	margin-top: 40px;
+}
+.team-member p {
+	margin: 30px 0px 0px;
+}
+.team-member ul {
+	width: 70%;
+	margin: 10px auto 0px;
+}
+.single-service {
+	width: 90%;
+	margin: 0 auto;
+}
+.footer-item-one,
+.footer-item-four{
+    text-align: center;
+}
+    /*last-brackets*/
+}

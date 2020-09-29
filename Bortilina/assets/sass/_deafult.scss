@@ -1,0 +1,76 @@
+/* =======================================================
+*    Default style
+* ======================================================= */
+@font-face {
+    font-family: 'muli';
+    src: url('../fonts/muli-bold-webfont.woff2') format('woff2'), url('../fonts/muli-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'), url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "muli";
+    background: #fff;
+    color: #222;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "montserrat";
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+ol,
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+a {
+    color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #000;
+    outline: none;
+    text-decoration: none;
+}
+
+::-webkit-selection {
+    color: #fff;
+    background: #1fb5f6;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #1fb5f6;
+}
+
+::selection {
+    color: #fff;
+    background: #1fb5f6;
+}

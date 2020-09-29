@@ -1,0 +1,152 @@
+/*=======================
+For mobile phones:
+========================= */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .main-menu .navbar-default .navbar-brand {
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 25px;
+        font-family: nautilus_pompiliusregular;
+    }
+    .main-menu .navbar-nav {
+        background-color: rgba(7, 7, 7, 0.5);
+    }
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover {
+        border: none;
+        padding-top: 2px;
+    }
+    .welcome-text {
+        text-align: center;
+        color: #fff;
+        padding: 60px 0px;
+    }
+    .welcome-text h1 {
+        font-size: 55px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .main-intro {
+        padding-top: 0px;
+    }
+    .intro-item {
+        padding-top: 50px;
+    }
+    .showcase .button {
+        font-size: 13px;
+    }
+    .showcase .element-item {
+        width: 30%;
+        margin: 3px;
+    }
+    .showcase-area .more-work a {
+        font-size: 16px;
+    }
+    .showcase-item:hover .thumbs-up {
+        left: 50%;
+        margin-left: -11px;
+        top: 65px;
+    }
+    .showcase-item:hover .heart {
+        right: 65%;
+        top: 25px;
+    }
+    .thumbs-up i,
+    .heart i {
+        position: absolute;
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        padding-top: 5px;
+    }
+    .testimonial {
+        padding: 0px;
+    }
+    .testimonial-head {
+        width: 100%;
+    }
+    .testimonial-head p {
+        font-size: 14px;
+    }
+    .testimonial-body {
+        width: 60%;
+        text-align: center;
+    }
+    .testimonial-body img {
+        float: none;
+        margin-right: 0px;
+        margin: 0 auto;
+    }
+    .testimonial-carousel .carousel-indicators {
+        bottom: -40px;
+    }
+    .happy-client ul {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .all-team-member {
+        padding: 0px;
+    }
+    .team-member {
+        margin: 35px;
+    }
+    .team-member>img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .team-member p {
+        margin-top: 60px;
+    }
+    .team-member p::before {
+        position: absolute;
+        content: "";
+        height: 55px;
+        top: 105px;
+    }
+    .recent-post {
+        margin: 50px 0px;
+    }
+    .footer-area {
+        text-align: left;
+    }
+    .footer-area p {
+        font-size: 13px;
+    }
+    /*last-brackets*/
+}
+
+
+/*=======================
+For tablets:
+========================= */
+
+@media only screen and (min-width: 420px) and (max-width: 768px) {
+    .showcase .element-item {
+    position: relative;
+	width: 30%;
+}
+    .showcase-item:hover .thumbs-up {
+	left: 60px;
+}
+    .showcase-item:hover .heart {
+	right: 80px;
+}
+.team-member > img {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
+}
+    .team-member p::before {
+	top: 110px;
+}
+    .recent-post {
+	margin: 30px 0px;
+}
+    /*last-brackets*/
+}

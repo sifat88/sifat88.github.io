@@ -1,0 +1,214 @@
+/*=======================
+For mobile phones:
+========================= */
+
+@media only screen and (min-width: 320px) and (max-width: 766px) {
+    .main-menu .navbar-default {
+        float: none;
+        margin-top: 0px;
+    }
+    .main-menu .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: #fff;
+    }
+    .main-menu .navbar-default .navbar-toggle {
+        border-color: #B7B7B7;
+    }
+    .main-menu .navbar-default .navbar-toggle .icon-bar {
+        background-color: #FFCB0F;
+    }
+    .main-menu .navbar-brand {
+        float: left;
+        height: 50px;
+        padding: 0px;
+        line-height: 20px;
+    }
+    .main-header .logo h1 {
+        font-size: 21px;
+        margin: 5px 0px 0px 0px;
+    }
+    .main-header .logo p {
+        font-size: 14px;
+    }
+    .main-menu .navbar-collapse {
+        padding-right: 15px;
+    }
+    .main-menu .navbar-nav {
+        margin-top: 7.5px;
+    }
+    .main-menu .navbar-default .navbar-collapse {
+        border-color: #b7b7b7;
+        margin-top: 5px;
+    }
+    .welcome-text {
+        padding: 40px 0px;
+    }
+    .welcome-text h1 {
+        font-size: 35px;
+    }
+    .welcome-text p {
+        width: 100%;
+    }
+    .welcome-button .btn-default {
+        margin: 0px 10px;
+        display: inline-block;
+    }
+    .discription-text {
+        padding: 30px 0px;
+    }
+    .discription-text h3 {
+        text-align: center;
+    }
+    .discription-text span {
+        text-align: center;
+    }
+    .discription-img {
+        padding-top: 0px;
+    }
+    .why-text p {
+        font-size: 14px;
+    }
+    .service-area {
+        padding-top: 0px;
+    }
+    .works .button {
+        margin: 5px auto;
+        display: block;
+        text-align: center;
+    }
+    .element-item {
+        width: 45%;
+        margin: 5px 5px;
+    }
+    .customer-review {
+        width: 90%;
+        margin: 40px auto 0px;
+    }
+    .contact-text h3 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 15px auto 10px;
+    }
+    .contact-text p {
+        font-size: 18px;
+        font-weight: lighter;
+        margin: 0px auto 15px;
+    }
+    .contact-form .form-control {
+        margin-bottom: 15px;
+    }
+    .footer-item-one,
+    .footer-item-one .logo {
+        text-align: center;
+    }
+    .footer-item-one .logo h1 {
+        font-style: normal;
+    }
+    .footer-item-four {
+        text-align: center;
+    }
+    /*last-brackets*/
+}
+
+/*=======================
+For tablets:
+========================= */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .main-header .logo {
+        text-align: center;
+    }
+    .main-menu .navbar-nav {
+        text-align: center;
+        display: inline-block;
+        float: none;
+    }
+    .main-menu .navbar-default {
+        float: none;
+        text-align: center;
+    }
+    .welcome-text {
+        padding: 80px 0px 100px;
+    }
+    .welcome-text h1 {
+        font-size: 50px;
+    }
+    .welcome-text h3 {
+        font-size: 35px;
+    }
+    .discription-text button {
+        float: right;
+        margin-right: 10%;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .why-text p {
+        padding: 0px 10px;
+    }
+    .element-item {
+        width: 22%;
+    }
+    .service {
+        width: 65%;
+        display: block;
+        margin: 50px auto 0px;
+    }
+    .customer-review {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    .contact-text h3 {
+        font-size: 30px;
+    }
+    .contact-form .form-control {
+        margin-bottom: 15px;
+    }
+    .contact-form {
+        margin-top: 20px;
+    }
+    .footer-item-one,
+    .footer-item-one .logo {
+        text-align: center;
+    }
+    .footer-item-one {
+        margin-bottom: 40px;
+    }
+    .footer-item-one .logo h1 {
+        font-style: normal;
+        font-size: 30px;
+    }
+    .footer-item-one ul {
+        display: none;
+    }
+    .social-kit {
+        display: block !important;
+        margin: 20px;
+        text-align: center;
+    }
+    .social-kit li {
+        display: inline-block;
+        margin: 0px 4px;
+    }
+    .social-kit li a {
+        display: table;
+        color: #000;
+    }
+    .social-kit li a i {
+        font-size: 15px;
+        background-color: #FFCB0F;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .footer-item-four {
+        text-align: center;
+    }
+    .footer-item-one .logo p {
+        font-size: 21px;
+    }
+    last-brackets
+}

@@ -1,0 +1,503 @@
+// _deafult.scss
+@import 'deafult';
+@import 'mixin';
+
+// All variabels
+$main-color: #2670c4;
+$cm-opacity: $main-color;
+$sub-color: #fff;
+$sec-pad: 90px;
+$com-pad: 20px;
+$sub-com-pad: 30px;
+
+/* =======================================================
+*    Header style
+* ======================================================= */
+
+.top-bar {
+    padding-top: $com-pad;
+    padding-bottom: $com-pad;
+    @include mb-mq {
+        padding-top: $com-pad + 5px;
+        padding-bottom: $com-pad + 5px;
+    }
+    @include clearfix;
+}
+
+.social {
+    float: left;
+    @include mb-mq {
+        float: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    li {
+        display: inline-block;
+        margin-right: 8px;
+        @include no-m;
+        a {
+            font-size: 18px;
+            color: $main-color;
+        }
+    }
+}
+
+.search-form {
+    float: right;
+    @include mb-mq {
+        float: none;
+        text-align: center;
+    }
+    .form-control {
+        display: inline-block;
+        border-color: $main-color;
+        border-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-right: 0px transparent;
+        height: 35px;
+        padding: 6px 25px;
+        width: auto;
+        &:focus {
+            border-color: $main-color;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0);
+        }
+    }
+    .btn {
+        display: inline-block;
+        background-color: $main-color;
+        color: $sub-color;
+        border-radius: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        outline: none;
+        padding: 7px 15px;
+        margin-top: -3px;
+        margin-left: -5px;
+        &:hover {
+            outline: none;
+        }
+    }
+}
+
+/*========== Main Nav ============*/
+
+.main-nav {
+    background-color: $cm-opacity;
+    padding: 15px 0px;
+    @include sm-mq {
+        text-align: center;
+        .navbar-header {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    .navbar {
+        min-height: auto;
+        margin-bottom: 0px;
+        padding: 15px 0px;
+    }
+    .navbar-default {
+        background-color: transparent;
+        border: none;
+
+        .navbar-nav {
+            float: right;
+            @include sm-mq {
+                float: left;
+                width: 100%;
+            }
+            li {
+                @include sm-mq {
+                    float: none;
+                    display: inline-block;
+                }
+                a {
+                    color: $sub-color;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    @include lg-mq {
+                        font-size: 14px;
+                        padding: 15px 10px;
+                    }
+                }
+                &.active {
+                    a,
+                    a:focus,
+                    a:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-brand {
+        padding: 0px;
+        @include sm-mq {
+            float: none;
+            display: inline-block;
+            padding-bottom: 15px;
+            height: auto;
+        }
+        @include mb-mq {
+            width: 75%;
+            padding-top: 15px;
+        }
+    }
+    @include mb-mq {
+        .navbar-toggle {
+            margin-right: 6px;
+            background-color: $sub-color;
+            border: 1px solid #fff;
+            border-radius: 1px;
+            .icon-bar {
+                background-color: $main-color;
+            }
+        }
+    }
+}
+
+/* =======================================================
+*    Slider Area style
+* ======================================================= */
+
+.slider-area {
+    position: relative;
+    background-image: url(../img/main-bg.jpg);
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.15);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .single-slide {
+        text-align: center;
+        padding-top: 250px;
+        padding-bottom: 250px;
+        vertical-align: middle;
+        color: $sub-color;
+        @include sm-mq {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+        @include mb-mq {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 50px;
+            margin-bottom: 15px;
+            @include lg-mq {
+                font-size: 45px;
+            }
+            @include sm-mq {
+                font-size: 45px;
+                line-height: 55px;
+            }
+            @include mb-mq {
+                font-size: 40px;
+            }
+        }
+        p {
+            width: 600px;
+            margin: 0 auto;
+            font-size: 16px;
+            @include mb-mq {
+                width: auto;
+            }
+        }
+    }
+    .owl-nav {
+        div {
+            @include slider-arrow;
+        }
+    }
+}
+
+/* =======================================================
+*    Blog Area style
+* ======================================================= */
+
+.blog-area {
+    background-color: #f8f8f8;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @include mb-mq {
+        padding-bottom: 70px;
+    }
+}
+
+@include mb-mq {
+    .mbl-m50 {
+        margin-bottom: 50px;
+    }
+}
+
+.single-post {
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    &:hover {
+        .opacity-blocks div {
+            background-color: rgba(38, 112, 196, 0.75);
+        }
+    }
+    @include mb-mq {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    @include mbl-mq {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.blog-img {
+    position: relative;
+    overflow: hidden;
+    .opacity-blocks {
+        div {
+            position: absolute;
+            left: -25px;
+            top: -70px;
+            width: 105%;
+            height: 100px;
+            background-color: rgba(38, 112, 196, 0.45);
+            transform: rotate(-7deg);
+            transition: all 0.4s;
+            @include sm-mq {
+                left: -13px;
+                transform: rotate(-10deg);
+            }
+            @include mb-mq {
+                left: -15px;
+                transform: rotate(-11deg);
+            }
+            &.opa-last {
+                left: auto;
+                top: auto;
+                right: -25px;
+                bottom: -70px;
+                @include sm-mq {
+                    right: -13px;
+                }
+                @include mb-mq {
+                    right: -15px;
+                }
+            }
+        }
+    }
+}
+
+.blog-details {
+    background-color: $sub-color;
+    padding: 30px 20px;
+    @include radius(5px);
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 10px;
+        i {
+            color: $main-color;
+            margin-right: 5px;
+        }
+    }
+}
+
+.blog-cta {
+    margin-top: 15px;
+    a {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 15px;
+        background-color: $main-color;
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 5px;
+        i {
+            font-size: 13px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.secound-row {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include mb-mq {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.more-cta {
+    @extend .blog-cta;
+    margin-top: 60px;
+    text-align: center;
+    a {
+        border-radius: 0px;
+        padding: 12px 35px;
+        font-size: 18px;
+    }
+}
+
+/* =======================================================
+*    Brand Area style
+* ======================================================= */
+
+.brand-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include mb-mq {
+        padding-bottom: 90px;
+    }
+    .owl-nav {
+        div {
+            @include slider-arrow;
+            @include lg-mq {
+                left: -60px;
+                background-color: transparent;
+                &.owl-next {
+                    right: -60px;
+                }
+            }
+            @include sm-mq {
+                left: -20px;
+                background-color: transparent;
+                &.owl-next {
+                    right: -20px;
+                }
+            }
+            @include mb-mq {
+                bottom: -65px;
+            }
+            i {
+                color: #ddd;
+                transition: all 0.3s;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+.single-brand {
+    width: 80%;
+    margin: 0 auto;
+    @include sm-mq {
+        width: 60%;
+    }
+}
+
+/* =======================================================
+*    Footer style
+* ======================================================= */
+
+footer {
+    padding-top: $sec-pad;
+    background-color: $main-color;
+    color: $sub-color;
+    @include mb-mq {
+        padding-top: 70px;
+    }
+}
+
+.footer-list {
+    h3 {
+        display: inline-block;
+        text-transform: capitalize;
+        font-size: 28px;
+        margin-bottom: 25px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 120px;
+            height: 2px;
+            left: 0;
+            top: 40px;
+            background-color: $sub-color;
+        }
+    }
+    ul {
+        li {
+            text-transform: capitalize;
+            font-size: 18px;
+            padding-bottom: 10px;
+            @include no-m;
+            @include mb-mq {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@include sm-mq {
+    .footer-main > div > div:nth-child(1n),
+    .footer-main > div > div:nth-child(2n) {
+        margin-bottom: 50px;
+    }
+}
+
+.footer-bottom {
+    background-color: #182631;
+    margin-top: $sec-pad;
+    padding-top: $sub-com-pad + 20px;
+    padding-bottom: $sub-com-pad + 20px;
+    text-align: center;
+    @include sm-mq {
+        margin-top: $sec-pad - 50px;
+    }
+    @include mb-mq {
+        margin-top: $sec-pad - 20px;
+        padding-top: $sub-com-pad + 5px;
+        padding-bottom: $sub-com-pad + 5px;
+    }
+    ul {
+        li {
+            display: inline-block;
+            a {
+                display: table;
+                width: 40px;
+                height: 40px;
+                background-color: $main-color;
+                margin: 0px 10px;
+                @include radius(50%);
+                @include mb-mq {
+                    width: 35px;
+                    height: 35px;
+                    margin: 0px 5px;
+                }
+                i {
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-size: 18px;
+                    color: $sub-color;
+                    @include mb-mq {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    p {
+        font-size: 17px;
+        text-transform: capitalize;
+        padding-top: 15px;
+        @include mb-mq {
+            font-size: 15px;
+        }
+    }
+}

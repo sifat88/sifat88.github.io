@@ -1,0 +1,898 @@
+/*=========================================
+           For laptop
+============================================*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /*first brackets*/
+.welcome-text h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}   
+.welcome-text p {
+    font-size: 14px;
+}    
+.welcome-text button {
+    padding: 10px 30px;
+}
+.welcome-text button a {
+    font-size: 14px;
+}
+.main-nav .navbar-nav {
+    padding: 8px 0px;
+}
+.intro-content {
+    margin-left: -485px;
+    top: -80px;
+}
+.com-value {
+    background-size: 400px , cover;
+}
+.g-text, .g-text2, .g-text3 {
+    font-size: 14px;
+}
+.cta-content h2 {
+    font-size: 35px;
+}
+.cta-content p {
+    width: 70%;
+}
+.cta a{
+    padding: 12px 50px;    
+}
+.single-intro h3, .single-service h4 {
+    font-size: 17px;
+}   
+.ano-service-area {
+    padding: 50px 0px 200px;
+}
+.single-ano-intro h3 {
+    font-size: 17px;
+}
+.ano-service-area .section-title {
+    margin-bottom: 75px;
+}
+.tweet-content {
+    width: 100%;
+}
+.tweet-content p {
+    font-size: 15px;
+}   
+.ftr-heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.footer-news p {
+    font-size: 13px;
+}
+.ftr-two .col-md-6 {
+    padding: 0px;
+}
+.ftr-two ul li {
+    font-size: 14px;
+}
+.ftr-three p, .ftr-three span {
+    font-size: 14px;
+}
+.ftr-social ul li {
+    margin: 5px 5px;
+}
+.ftr-four p {
+    font-size: 14px;
+}
+.ftr-address ul li {
+    font-size: 14px;
+}
+.ftr-address ul li i{
+    font-size: 16px;
+}
+.ftr-bottom p, .ftr-bottom ul li, .mine span {
+    font-size: 14px;
+}
+    /*last-brackets*/
+}
+
+
+/*=========================================
+           For tablets
+============================================*/
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+   /*first brackets*/
+.main-nav .navbar-header {
+    float: none;
+    text-align: center;
+}
+.main-nav .navbar-brand {
+    padding: 0px 0px;
+    margin-top: 30px;
+    display: inline-block;
+    float: none;
+}
+.main-nav .navbar-nav {
+    float: none;
+    padding: 0px 0px;
+    text-align: center;
+}
+.welcome-text {
+    padding: 90px 50px;
+}
+.welcome-text h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}   
+.welcome-text h1 {
+    font-size: 50px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.welcome-text p {
+    font-size: 14px;
+}
+.welcome-text button a {
+    font-size: 16px;
+}   
+.welcome-text button {
+    padding: 12px 30px;
+}
+.welcome-slider .owl-controls .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 3px;
+    border: 2px solid #313131;
+}
+.welcome-slider .owl-controls .owl-dots .owl-dot.active span, .welcome-slider .owl-controls .owl-dots .owl-dot:hover span {
+    background: #313131;
+    border: 2px solid #a6a6a6;
+}
+.intro-content {
+    position: absolute;
+    left: 50%;
+    margin-left: -585px;
+    top: -60px;
+}
+.intro-content {
+    position: absolute;
+    left: 50%;
+    margin-left: -325px;
+    top: -60px;
+}
+.intro-content .container {
+    width: 650px;
+}
+.intro-left {
+    width: 40%;
+    padding: 50px 20px 30px;
+}
+.intro-right {
+    width: 60%;
+    display: block;
+    float: right;
+    padding: 50px 25px;
+    background-color: #fff;
+}
+.intro-left h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.intro-left a {
+    margin-top: 146px;
+    margin-left: -60px;
+}
+.smt {
+    margin-top: 30px;
+}   
+.single-intro h3, .single-service h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}    
+
+.com-value{
+    background-position: 6% 100% , right bottom;
+    background-size: 250px , 940px;
+}
+.value-text {
+    color: #444444;
+}
+.value-text h3 {
+    margin-bottom: 20px;
+}
+.value-text p {
+    width: 100%;
+    line-height: 23px;
+}
+.value-graph {
+    text-align: center;
+}
+.value-circle, .value-circle-one, .value-circle-two, .value-circle-three, .value-circle-four, .value-circle-five {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #b2e6e1;
+    border-radius: 50%;
+    margin: 5px;
+}
+.value-circle{
+    position: relative;
+}
+.value-circle .white-step {
+    position: absolute;
+    left: 90px;
+    top: -66px;
+    height: 48px;
+    width: 66px;
+}
+.value-circle .circle-text {
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    padding: 5px 8px;
+    width: 165px;
+}
+.value-circle .circle-text h2 {
+    font-size: 20px;
+}
+.value-circle .circle-text p{
+    color: #757575;
+}
+.value-circle-one{
+    height: 100px;
+    width: 100px;
+    border: 5px solid #009688;
+    margin: 10px;
+}
+.value-circle-two{
+    height: 160px;
+    width: 160px;
+    border: 20px solid #009688;
+    margin: 0px;
+    border-top-color: transparent;
+    position: relative;
+}
+.value-circle-two .arrow-circle {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    height: 160px;
+    width: 160px;
+}
+.value-circle-two i {
+    position: absolute;
+    left: 59px;
+    top: -22px;
+    color: #009688;
+    font-size: 24px;
+}
+.value-circle-three{
+    height: 200px;
+    width: 200px;
+    border: 20px solid #00ab9a;
+    margin: 0px;
+    border-top-color: transparent;
+    position: relative;
+}
+.g-line, .g-line2, .g-line3 {
+    position: absolute;
+    left: -115px;
+    top: 50px;
+    height: 2px;
+    width: 110px;
+}
+.g-circle, .g-circle2, .g-circle3 {
+    position: absolute;
+    left: -125px;
+    top: 45px;
+    height: 12px;
+    width: 12px;
+}
+.g-num {
+    position: absolute;
+    left: -110px;
+    top: 0px;
+    font-size: 35px;
+}
+.g-text, .g-text2, .g-text3 {
+    position: absolute;
+    left: -190px;
+    top: 60px;
+    width: 160px;
+    font-size: 13px;
+}
+.value-circle-four{
+    height: 240px;
+    width: 240px;
+    border: 20px solid #00c4b1;
+    margin: 0px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    position: relative;
+}
+.value-circle-four .g-line2 {
+    left: -40px;
+    top: 205px;
+}
+.value-circle-four .g-circle2 {
+    left: -50px;
+    top: 200px;
+}
+.value-circle-four .g-text2 {
+    left: -110px;
+    top: 215px;
+    width: 150px;
+}
+.value-circle-five{
+    height: 270px;
+    width: 270px;
+    border: 20px solid #00e8d1;
+    margin: 0px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: relative;
+}
+.value-circle-five .arrow-circle2 {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    height: 280px;
+    width: 280px;
+}
+.value-circle-five .g-line3 {
+    left: 260px;
+    top: 120px;
+    width: 85px;
+}
+.value-circle-five .g-circle3 {
+    left: 340px;
+    top: 115px;
+}
+.value-circle-five .g-text3 {
+    left: 280px;
+    top: 130px;
+    width: 128px;
+}
+.cta-area {
+    padding: 80px 0px;
+}   
+.cta-content h2 {
+    font-size: 28px;
+}   
+.cta-content p {
+    width: 80%;
+}    
+.cta a {
+    padding: 12px 46px;
+}   
+.service-area {
+    padding: 80px 0px;
+}  
+.section-title {
+    margin-bottom: 50px;
+}   
+.ssmt{
+    margin-top: 30px;
+}   
+.single-service p {
+    width: 80%;
+}   
+.ano-service-area {
+    padding: 20px 0px 150px;
+} 
+.ano-service-area .section-title {
+    margin-bottom: 50px;
+}   
+.ano-service-area .ssmt {
+    margin-top: 120px;
+}    
+.single-ano-intro h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}   
+.single-ano-intro span {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.single-ano-intro p {
+    font-size: 14px;
+}
+.tweet-content {
+    width: 100%;
+}   
+.tweet-content p {
+    font-size: 14px;
+}   
+.tweet-content p i {
+    margin-left: 20px;
+    margin-right: 0px;
+}    
+.tweet-content p span {
+    width: 90%;
+}
+footer .row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+footer .ssmt {
+    margin-top: 50px;
+}
+.ftr-heading {
+    font-size: 18px;
+    margin-bottom: 25px;
+}   
+.ftr-two ul li {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.ftr-social {
+    text-align: left;
+}    
+.ftr-three p, .ftr-three span {
+    font-size: 14px;
+}   
+.ftr-four p {
+    font-size: 14px;
+}
+.ftr-address ul li {
+    font-size: 14px;
+}  
+    /*last-brackets*/ 
+}
+
+/*=======================
+For mobile phones:
+========================= */
+
+@media only screen and (max-width: 766px) {
+   /*first brackets*/
+
+header {
+    background-position: 30%;
+}
+.main-nav .navbar-brand {
+    margin-top: 0px;
+}
+.main-nav .navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.main-nav .navbar-default .navbar-toggle:focus,
+.main-nav .navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+.main-nav .navbar-toggle {
+    padding: 6px 10px;
+    margin-top: 13px;
+    border: 2px solid transparent;
+    border-radius: 0px;
+}
+.main-nav .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.main-nav .navbar-toggle .icon-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 0px;
+}  
+.main-nav .navbar-nav {
+    float: left;
+    padding: 15px 0px;
+}
+.main-nav .navbar-nav>li {
+    display: block;
+}
+.main-nav .navbar-default .navbar-collapse,
+.main-nav .navbar-default .navbar-form {
+    border-color: #fff;
+    border-top: 2px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+.main-nav .navbar-default .navbar-nav>.active>a, .main-nav .navbar-default .navbar-nav>.active>a:focus, .main-nav .navbar-default .navbar-nav>.active>a:hover {
+    border-left: 2px solid #ffe400;
+}
+.welcome-text {
+    padding: 50px 5px;
+    text-align: left;
+}   
+.welcome-text h3 {
+    font-size: 18px;
+}   
+.welcome-text h1 {
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 15px;
+} 
+.welcome-text p {
+    font-size: 14px;
+    width: 100%;
+    line-height: 20px;
+}
+.welcome-text button {
+    margin-top: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 35px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+}   
+.welcome-slider .owl-controls .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0px 0px;
+}
+.welcome-slider .owl-controls .owl-dots .owl-dot span {
+    width: 30px;
+    height: 7px;
+    margin: 5px 3px;
+    background: rgba(0,0,0,0.3);
+    border: none;
+}
+.welcome-slider .owl-controls .owl-dots .owl-dot.active span, .welcome-slider .owl-controls .owl-dots .owl-dot:hover span {
+    background: rgba(0,0,0,0.8);
+    border: none;
+}   
+.welcome-slider .owl-controls .owl-dots {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    margin-top: 0px;
+    top: initial;
+    right: initial;
+}
+.intro-area {
+    min-height: 750px;
+}
+.main-intro {
+    box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.1);
+}
+.intro-content {
+    margin-left: -50%;
+    top: -60px;
+    width: 100%;
+}   
+.intro-left, .intro-right {
+    width: 100%;
+    display: block;
+    float: none;
+    padding: 30px 20px 30px;
+}   
+.intro-right {
+    padding: 35px 10px;
+}    
+.intro-left a {
+    margin-top: 80px;
+}   
+.single-intro h3, .single-service h4 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.single-intro p, .single-service p {
+    font-size: 13px;
+}    
+.smt, .ssmt {
+    margin-top: 30px;
+}
+.com-value{
+    background-position: 6% 100% , right bottom;
+    background-size: 140px , 940px;
+    overflow: hidden;
+}
+.value-text {
+    color: #444444;
+}
+.value-text h3 {
+    margin-bottom: 15px;
+}
+.value-text p {
+    width: 100%;
+    line-height: 21px;
+    font-size: 13px;
+}
+.value-graph {
+    padding: 30px 0px 60px;
+}
+.value-circle{
+    width: 50px;
+    height: 50px;
+}
+.value-circle .white-step {
+    position: absolute;
+    left: 50px;
+    top: -68px;
+    height: 50px;
+    width: 100px;
+}
+.value-circle .circle-text {
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    padding: 5px 8px;
+    width: 130px;
+}
+.value-circle .circle-text h2 {
+    font-size: 14px;
+}
+.value-circle .circle-text p{
+    font-size: 10px;
+}
+.value-circle-one{
+    height: 70px;
+    width: 70px;
+}
+.value-circle-two{
+    height: 130px;
+    width: 130px;
+}
+.value-circle-two .arrow-circle {
+    height: 130px;
+    width: 130px;
+}
+.value-circle-two i {
+    position: absolute;
+    left: 44px;
+    top: -21px;
+    font-size: 23px;
+}
+.value-circle-three{
+    height: 170px;
+    width: 170px;
+}
+.g-line, .g-line2, .g-line3 {
+    position: absolute;
+    left: -5px;
+    top: -70px;
+    height: 100px;
+    width: 2px;
+}
+.g-circle, .g-circle2, .g-circle3 {
+    position: absolute;
+    left: -10px;
+    top: -80px;
+    height: 12px;
+    width: 12px;
+}
+.g-num {
+    position: absolute;
+    left: -75px;
+    top: -57px;
+    font-size: 30px;
+}
+.g-text, .g-text2, .g-text3 {
+    position: absolute;
+    left: 10px;
+    top: -55px;
+    width: 160px;
+    font-size: 10px;
+    z-index: 99;
+}
+.value-circle-four{
+    height: 210px;
+    width: 210px;
+}
+.value-circle-four .g-line2 {
+    left: -30px;
+    top: 175px;
+    width: 90px;
+    height: 2px;
+}
+.value-circle-four .g-circle2 {
+    left: -40px;
+    top: 170px;
+}
+.value-circle-four .g-text2 {
+    left: -70px;
+    top: 185px;
+    width: 70%;
+}
+.value-circle-five{
+    height: 250px;
+    width: 250px;
+}
+.value-circle-five .arrow-circle2 {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    height: 250px;
+    width: 250px;
+}
+.value-circle-five .g-line3 {
+    left: 200px;
+    top: 170px;
+    width: 2px;
+    height: 80px;
+}
+.value-circle-five .g-circle3 {
+    left: 195px;
+    top: initial;
+    bottom: -46px;
+}
+.value-circle-five .g-text3 {
+    left: 135px;
+    top: inherit;
+    width: 128px;
+    bottom: -90px;
+}
+.cta-area {
+    padding: 60px 0px;
+} 
+.cta-content h2 {
+    font-size: 30px;
+}   
+.cta-content p {
+    width: 100%;
+}   
+.cta {
+    margin: 13px 0px;
+}    
+.cta a {
+    padding: 12px 50px;
+    border: 2px solid #fff;
+}  
+.service-area {
+    padding: 60px 0px;
+}   
+.ano-service-area {
+    padding: 30px 0px 0px;
+}
+.ano-service-area .section-title {
+    margin-bottom: 60px;
+}
+.section-title h3 {
+    font-size: 23px;
+}   
+.section-title p {
+    font-size: 14px;
+}   
+.ano-single-service {
+    margin-bottom: 150px;
+}
+.single-ano-intro {
+    padding: 20px 10px;
+    bottom: -110px;
+}
+.single-ano-intro h3 {
+    font-size: 18px;
+}    
+.single-ano-intro span {
+    font-size: 14px;
+    margin-bottom: 15px;
+}    
+.single-ano-intro p {
+    font-size: 15px;
+}
+.tweet-content p {
+    font-size: 15px;
+}
+.tweet-content p i, .tweet-content p span {
+    float: none;
+    display: block;
+}
+footer .row {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-news:first-of-type {
+    margin-bottom: 30px;
+}
+.ftr-one {
+    margin-bottom: 40px;
+}
+.ftr-two ul li {
+    font-size: 14px;
+    margin-bottom: 12px;
+}    
+.ftr-two ul li:last-of-type {
+    margin-bottom: 12px;
+}   
+.ftr-heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}   
+.ftr-three p, .ftr-three span {
+    font-size: 14px;
+}   
+.ftr-four p {
+    font-size: 14px;
+}
+.ftr-four {
+    margin-top: 40px;
+}
+.ftr-bottom {
+    text-align: center;
+}
+.ftr-bottom ul, .ftr-bottom p {
+    text-align: center;
+}
+.ftr-bottom ul, .mine {
+    margin-top: 15px;
+}   
+    /*last-brackets*/ 
+}
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+    /*first brackets*/
+    
+.intro-content {
+    margin-left: -45%;
+    width: 90%;
+}   
+.intro-area {
+    min-height: 600px;
+} 
+.cta {
+    margin: 0px 10px;
+}
+.com-value {
+    background-size: 220px , 1140px;
+}  
+.value-graph {
+    padding: 0px 0px 60px;
+}
+.g-line {
+    position: absolute;
+    left: -175px;
+    top: 25px;
+    height: 2px;
+    width: 175px;
+}    
+.g-circle {
+    position: absolute;
+    left: -180px;
+    top: 20px;
+} 
+.g-num {
+    position: absolute;
+    left: -144px;
+    top: -20px;
+}
+.g-text {
+    position: absolute;
+    left: -190px;
+    top: 39px;
+    width: 160px;
+    font-size: 12px;
+}   
+.value-circle-four .g-text2 {
+    top: 190px;
+    width: 80%;
+    font-size: 12px;
+}   
+.value-circle-five .g-line3 {
+    left: 200px;
+    top: 170px;
+    width: 100px;
+    height: 2px;
+}   
+.value-circle-five .g-circle3 {
+    left: 295px;
+    top: initial;
+    bottom: 33px;
+}    
+.value-circle-five .g-text3 {
+    left: 215px;
+    top: inherit;
+    width: 80%;
+    bottom: -25px;
+    font-size: 12px;
+} 
+.ano-single-service {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}    
+.single-ano-intro {
+    display: block;
+    width: 50%;
+    position: absolute;
+    left: 80%;
+    margin-left: -55%;
+}  
+.ftr-social {
+    text-align: left;
+}   
+    /*last-brackets*/
+}

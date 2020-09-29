@@ -1,0 +1,586 @@
+/*=========================================
+           For laptop
+============================================*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /*first brackets*/
+    header {
+        background-size: 333px;
+    }
+    .welcome-text {
+        padding: 130px 30px 180px;
+    }
+    .welcome-text h1 {
+        font-size: 60px;
+    }
+    .welcome-text h1:after {
+        width: 185px;
+        height: 185px;
+    }
+    .main-nav .navbar-nav {
+    padding: 10px 0px;
+    }
+    .main-nav .navbar-brand {
+    padding: 10px 0px;
+    }
+    .about-area {
+        background-size: 218px, 332px;
+    }
+    .boost-area {
+        background-position: 3% 0%, 90% 50%;
+        background-size: 100px, 370px;
+    }
+    .hover-title h3 {
+        font-size: 13px;
+        padding-left: 15px;
+    }
+    .link {
+        padding: 10px 12px;
+    }
+    .link-bg{
+        bottom: 53px;
+    }
+    .link i {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .member-info h4 {
+        font-size: 22px;
+    }
+    .member-info {
+        margin-bottom: 50px;
+    }
+    .member-about {
+        margin-bottom: 70px;
+        font-size: 14px;
+    }
+    .member-social {
+        padding: 30px 0px;
+    }
+    .member-social ul li {
+        font-size: 22px;
+    }
+    .post-slider .owl-nav div {
+        width: 35px;
+        height: 35px;
+        font-size: 26px;
+    }
+    .post-intro h4 {
+        font-size: 18px;
+    }
+    .single-address p {
+        font-size: 16px;
+    }
+    /*last-brackets*/
+}
+
+
+/*=========================================
+           For tablets
+============================================*/
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    /*first brackets*/
+    header {
+        background-size: 255px;
+    }
+    .welcome-text {
+        padding: 80px 30px 100px;
+    }
+    .welcome-text h1 {
+        font-size: 50px;
+    }
+    .welcome-text h1:after {
+        width: 150px;
+        height: 150px;
+        top: -25px;
+    }
+    .welcome-text p {
+        font-size: 14px;
+    }
+    .welcome-slider .owl-controls .owl-dots {
+        top: 85%;
+    }
+    .main-nav {
+        text-align: center;
+    }
+    .main-nav .navbar-header {
+        float: none;
+        padding-top: 20px;
+    }
+    .main-nav .navbar-brand {
+        float: none;
+    }
+    .main-nav .navbar-brand>img {
+        display: inline-block;
+    }
+    .main-nav .navbar-nav {
+        float: none;
+        padding: 15px 0px;
+    }
+    .section-title h3 {
+        font-size: 30px;
+    }
+    .section-title h3:after {
+        font-size: 60px;
+    }
+    .about-single-service {
+        padding: 50px 0px 0px;
+    }
+    .about-single-service p {
+        font-size: 18px;
+    }
+    .about-single-service span {
+        padding: 0px;
+        font-size: 13px;
+    }
+    .about-count h3 {
+        font-size: 25px;
+        margin-bottom: 90px;
+    }
+    .about-area {
+        background-position: 100% 84%, -11% 50%;
+        background-size: 218px, 332px;
+    }
+    .about-single-count strong {
+        font-size: 36px;
+    }
+    .boost-area {
+        background-position: 1% 0%, 90% 50%;
+        background-size: 70px, 281px;
+    }
+    .feature-list {
+        margin-bottom: 40px;
+    }
+    .work-hover {
+        position: absolute;
+        height: 100%;
+        text-align: center;
+    }
+    .work-hover h3 {
+        font-size: 13px;
+        padding: 10px 0px;
+        padding-left: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+    .work-hover h3 span {
+        display: block;
+        margin-top: 5px;
+    }
+    .link {
+        position: static;
+        text-align: center;
+        background-color: transparent;
+        padding: 0px;
+        border-radius: 0px;
+        z-index: 0;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .link-bg{
+        display: none;
+    }
+    .link i {
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+    }
+    .service-area {
+        background-size: 264px;
+        z-index: 0;
+        text-align: center;
+    }
+    .service-area:after {
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border: 60px solid rgba(255, 228, 0, 0.7);
+        z-index: -1;
+    }
+    .price-head span {
+        font-size: 40px;
+    }
+    .member-info {
+        margin: 30px 0px;
+    }
+    .member-info h4 {
+        font-size: 16px;
+    }
+    .member-info p {
+        font-size: 13px;
+    }
+    .member-about {
+        padding: 1px 0px;
+        text-align: center;
+        margin-bottom: 35px;
+        font-size: 14px;
+    }
+    .member-social {
+        padding: 15px 0px;
+    }
+    .member-social ul li {
+        font-size: 25px;
+    }
+    .map-content .accordion-heading {
+        padding: 30px 0px;
+        font-size: 25px;
+    }
+    /*last-brackets*/
+}
+
+
+/*=======================
+For mobile phones:
+========================= */
+
+@media only screen and (max-width: 766px) {
+    /*first-brackets*/
+    header {
+        background-position: right bottom;
+        background-size: 233px;
+    }
+    .welcome-slider .owl-controls .owl-dots {
+        top: 90%;
+    }
+    .welcome-text h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .welcome-text h1:after {
+        content: '';
+        width: 130px;
+        height: 130px;
+        left: -20px;
+        top: -16px;
+    }
+    .welcome-text {
+        padding: 80px 30px;
+    }
+    .welcome-text p {
+        font-size: 15px;
+        width: 100%;
+        line-height: 23px;
+    }
+    .main-nav .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ffe400;
+    }
+    .main-nav .navbar-toggle .icon-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        border-radius: 0px;
+    }
+    .main-nav .navbar-default .navbar-toggle {
+        border-color: #ffe400;
+    }
+    .main-nav .navbar-toggle {
+        padding: 9px 10px;
+        margin-top: 20px;
+        margin-right: 0px;
+        display: inline-block;
+        margin-bottom: 8px;
+        border: 1px solid transparent;
+        border-radius: 0px;
+    }
+    .main-nav .navbar-default .navbar-toggle:focus,
+    .main-nav .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .main-nav .navbar-nav {
+        float: none;
+        padding: 15px 0px;
+        text-align: center;
+    }
+    .main-nav .navbar-nav>li {
+        float: none;
+        display: block;
+        border: 1px solid #ffe400;
+        margin: 10px 0px;
+    }
+    .main-nav .navbar-collapse {
+        border-top: 2px solid #ffe400;
+    }
+    .section-title h3 {
+        font-size: 30px;
+    }
+    .section-title h3:after {
+        font-size: 45px;
+        top: -25px;
+    }
+    .about-intro p {
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .cmn-cta {
+        margin: 10px 0px;
+    }
+    .cmn-cta a {
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+    .about-area {
+        background-position: 100% 79%, -11% 50%;
+        background-size: 165px, 333px;
+        position: relative;
+        z-index: 0;
+    }
+    .about-service {
+        margin-bottom: 30px;
+    }
+    .about-single-service {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 50px 0px 0px;
+    }
+    .about-count h3 {
+        font-size: 23px;
+        line-height: 32px;
+    }
+    .about-single-count {
+        margin-bottom: 30px;
+    }
+    .about-single-count strong {
+        font-size: 36px;
+    }
+    .boost-area {
+        background-position: 5% 0%, 95% 30%;
+        background-size: 45px, 140px;
+    }
+    .boost-content>p {
+        width: 60%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .boost-content ul li p {
+        font-size: 14px;
+    }
+    .info-area {
+        background-position: 65%;
+    }
+    .info-text h3 {
+        font-size: 26px;
+    }
+    .info-text p {
+        font-size: 14px;
+        width: 90%;
+        line-height: 22px;
+    }
+    .info-cta a {
+        font-size: 16px;
+        padding: 12px 20px;
+        margin: 0px;
+        margin-right: 5px;
+    }
+    .info-cta:after {
+        height: 40px;
+        top: 50%;
+        left: 41.5%;
+        margin-top: -20px;
+    }
+    .feature-list ul,
+    .feature-list ul li {
+        margin-bottom: 40px;
+    }
+    .feature-list ul li:last-of-type {
+        margin-bottom: 0px;
+    }
+    .work-menu .button {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .element-item {
+        width: 50%;
+    }
+    .work-hover {
+        position: absolute;
+        height: 100%;
+        text-align: center;
+    }
+    .work-hover h3 {
+        font-size: 13px;
+        padding: 5px 0px;
+        padding-left: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+    .work-hover h3 span {
+        display: block;
+        margin-top: 5px;
+    }
+    .link {
+        position: static;
+        text-align: center;
+        background-color: transparent;
+        padding: 0px;
+        border-radius: 0px;
+        z-index: 0;
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .link-bg{
+        display: none;
+    }
+    .link i {
+        width: 25px;
+        height: 25px;
+        line-height: 24px;
+        font-size: 13px;
+    }
+    .single-service {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .extra-mar {
+        margin-bottom: 0px;
+    }
+    .service-area {
+        z-index: 0;
+        background-size: 417px;
+    }
+    .service-area:after {
+        left: -15%;
+        bottom: -25%;
+        width: 600px;
+        height: 600px;
+        border: 200px solid rgba(255, 228, 0, 0.7);
+        z-index: -1;
+    }
+    .price-area .section-title {
+        padding-bottom: 50px;
+    }
+    .single-price {
+        margin-bottom: 40px;
+    }
+    .team-member {
+        margin-bottom: 40px;
+    }
+    .team-content {
+        margin-bottom: 0px;
+    }
+    .member-info h4 {
+        font-size: 22px;
+    }
+    .member-info {
+        margin-bottom: 50px;
+    }
+    .member-about {
+        margin-bottom: 70px;
+        font-size: 15px;
+    }
+    .member-social {
+        padding: 25px 0px;
+    }
+    .member-social ul li {
+        font-size: 28px;
+    }
+    .cta-text {
+        padding: 0px 10px;
+    }
+    .cta-text h3 {
+        font-size: 28px;
+    }
+    .cta-content .section-cta {
+        margin-top: 50px;
+    }
+    .blog-content {
+        margin-bottom: -40px;
+    }
+    .single-blog-post {
+        margin-bottom: 40px;
+    }
+    .contact-form .form-control {
+        height: 50px;
+    }
+    .contact-form textarea.form-control {
+        height: 150px;
+    }
+    .contact-form {
+        margin-top: 50px;
+    }
+    .contact-form .btn {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+    .map-content .accordion-heading {
+        padding: 25px 0px;
+        font-size: 25px;
+    }
+    .single-address i {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .single-address p {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .footer-social {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .footer-social ul li {
+        font-size: 28px;
+    }
+    .footer-copyright p {
+        font-size: 16px;
+    }
+    .mine span {
+        font-size: 16px;
+        margin-right: 0px;
+    }
+    .mine ul {
+        display: block;
+        margin-top: 5px;
+    }
+    /*last-brackets*/
+}
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+    /*first-brackets*/
+    .cmn-cta {
+        margin: 10px 10px;
+    }
+    .about-single-service {
+        width: 60%;
+    }
+    .boost-content {
+        padding-left: 50px;
+    }
+    .boost-area {
+        background-position: 2% 0%, 90% 60%;
+        background-size: 75px, 260px;
+    }
+    .info-cta a {
+        font-size: 18px;
+    }
+    .info-cta:after {
+        left: 45.5%;
+    }
+    .element-item {
+        width: 25%;
+    }
+    .service-area:after {
+        left: -30%;
+        bottom: -36%;
+        width: 700px;
+        height: 700px;
+        border: 200px solid rgba(255, 228, 0, 0.7);
+        z-index: -1;
+    }
+    .single-price,
+    .team-member,
+    .single-blog-post {
+        display: block;
+        width: 60%;
+        margin: 00px auto;
+        margin-bottom: 40px;
+    }
+    /*last-brackets*/
+}
