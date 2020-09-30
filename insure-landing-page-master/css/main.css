@@ -38,6 +38,7 @@ header::before {
     background-image: url(../images/bg-pattern-intro-right-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 header::after {
     position: absolute;
