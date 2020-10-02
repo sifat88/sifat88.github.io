@@ -530,4 +530,19 @@ header {
         color: #8e8e93;
         font-size: 14px;
     }
+    .profile-stats a {
+        color: #fff;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background: #333;
+        padding: 8px 0px;
+        border-radius: 8px;
+    }
+    .profile-stats a:last-of-type {
+        margin-top: 5px;
+        color: #333;
+        background-color: #ffcc00;
+    }
 }
