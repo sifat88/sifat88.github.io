@@ -488,6 +488,10 @@ header {
         margin: 0 auto;
         margin-bottom: 10px;
     }
+    .search-box label {
+        width: 90%;
+        margin: 0 auto;
+    }
     #searchBox {
         width: 100%;
         margin-bottom: 20px;
@@ -521,5 +525,9 @@ header {
     }
     .feed-sidebar {
         margin-left: 0px;
+    }
+    .user-details p:last-of-type {
+        color: #8e8e93;
+        font-size: 14px;
     }
 }
