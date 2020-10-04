@@ -1,0 +1,212 @@
+:root{  
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    padding: 0px;
+    list-style-type: none;
+}
+main {
+    background: #F7F7FF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.wrapper{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main::before {
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: -100px;
+    width: 375px;
+    height: 660px;
+    background-image: url(../images/bg-top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main::after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -145px;
+    width: 333px;
+    height: 280px;
+    background-image: url(../images/bg-bottom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.package-heading h1 {
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.pricing-option {
+    display: flex;
+    justify-content: center;
+    color: var(--Light-Grayish-Blue);
+    font-weight: bold;
+    margin-top: 30px;
+}
+.switch-btn {
+    width: 55px;
+    height: 29px;
+    background: #7D81E4;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+#switchButton{
+    opacity: 0;
+}
+.package-items {
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+.switch-btn span {
+    position: absolute;
+    content: '';
+    left: 3px;
+    top: 3px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #fff;
+    transition: linear 0.4s;
+}
+#switchButton:checked + span {
+    left: auto;
+    right: 3px;
+}
+.package-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+.single-package {
+    background: #fff;
+    padding: 25px 40px;
+    border-radius: 10px;
+    -webkit-box-shadow: -5px 10px 40px -20px rgba(142,146,235,1);
+-moz-box-shadow: -5px 10px 40px -20px rgba(142,146,235,1);
+box-shadow: -5px 10px 40px -20px rgba(142,146,235,1);
+color: var(--Grayish-Blue);
+min-width: 350px;
+}
+.package-name h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.package-price {
+    font-size: 65px;
+    font-weight: bold;
+    color: #000;
+}
+
+.monthly-price{
+    display: none;
+}
+.package-price > p, .monthly-price{
+    transition: linear 0.4s;
+}
+.package-package-features{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.package-package-features li {
+    font-weight: bold;
+    padding: 15px 0px;
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+.package-package-features li:first-of-type{
+    border-top: 1px solid var(--Light-Grayish-Blue); 
+}
+.package-cta .btn {
+    background: #9097E8;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+    padding: 12px 0px;
+    outline: none;
+    transition: linear 0.3s;
+    border: 2px solid #9097E8;
+}
+.package-cta .btn:hover{
+    background: transparent;
+    color: #9097E8;
+}
+.middle-one {
+    background-color: #898CE8;
+    color: var(--Very-Light-Grayish-Blue);
+    position: relative;
+    z-index: 5;
+    transform: scale(1.1);
+}
+.middle-one .package-price{
+    color: var(--Very-Light-Grayish-Blue);
+}
+.middle-one .package-cta .btn{
+    background: #ffffff;
+    color: #898CE8;
+}
+.middle-one .package-cta .btn:hover{
+    background: transparent;
+    border-color: #ffffff;
+    color: #fff;
+}
+.show-price .package-price > p {
+    display: none;
+}
+.show-price .package-price .monthly-price{
+    display: block;
+}
+footer{
+    background: #F7F7FF;
+}
+.attribution {
+    padding: 50px 0px 35px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* =============== Responsive =============== */
+@media all and (min-width:320px) and (max-width: 480px){
+    main{
+        height: auto;
+    }
+    main::before {
+        right: 0px;
+        top: 0px;
+        width: 115px;
+        height: 400px;
+    }
+    main::after {
+        display: none;
+    }
+    .package-items {
+        flex-direction: column;
+        padding: 0px 25px;
+    }
+    .middle-one {
+        transform: scale(1);
+        margin: 50px 0px;
+    }
+    .single-package {
+        min-width: auto;
+    }
+    .package-price {
+        font-size: 55px;
+    }
+}
