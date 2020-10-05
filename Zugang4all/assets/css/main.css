@@ -1,0 +1,169 @@
+@font-face {font-family: "Avenir Black";
+    src: url("../fonts/275de2221d9f0c4c9257d17f5a1e4006.eot"); /* IE9*/
+    src: url("../fonts/275de2221d9f0c4c9257d17f5a1e4006.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/275de2221d9f0c4c9257d17f5a1e4006.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/275de2221d9f0c4c9257d17f5a1e4006.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/275de2221d9f0c4c9257d17f5a1e4006.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/275de2221d9f0c4c9257d17f5a1e4006.svg#Avenir Black") format("svg"); /* iOS 4.1- */
+  }
+:root{
+    --primary-color: #ed5f8d;
+    --secondary-color: #3cc262;
+    --primary-lite: #84475b;
+    --plain-white: #fbfbfb;
+    --border-color: #606060;
+}
+h1,h2,h3,h4,h5,h6,p,label{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Avenir Black";
+}
+main{
+      width: 350px;
+      margin: 0 auto;
+      background: #353535;
+      color: var(--plain-white);
+      padding: 0px 20px;
+}
+.settings-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    border-bottom: 2px solid var(--border-color);
+}
+.setting-icon {
+    margin-right: 10px;
+}
+.settings-block {
+    text-align: center;
+    padding: 20px 0px 20px;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 30px;
+    transition: linear 0.4s;
+}
+.setting-toggole-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.settings-block-icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.settings-block-header {
+    background: var(--primary-color);
+    padding: 12px 8px;
+    border-radius: 8px;
+}
+.settings-block-header h3 {
+    font-size: 22px;
+}
+.settings-block-feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.starttime, .endtime {
+    text-align: left;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+}
+.endtime{
+    text-align: right;
+}
+input#startTime, input#endTime {
+    border: none;
+    background: var(--primary-lite);
+    color: var(--plain-white);
+    padding: 13px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+}
+input#startTime:focus, input#endTime:focus{
+    outline: none;
+}
+.settings-block-cta{
+    margin-top: 20px;
+}
+.settings-block-cta .btn {
+    background: var(--secondary-color);
+    color: var(--plain-white);
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.tgbox {
+    align-self: center;
+    width: 60px;
+    height: 28px;
+    background: #ededed;
+    border-radius: 30px;
+    position: relative;
+    -webkit-box-shadow: inset -1px 2px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px 2px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: inset -1px 2px 5px -1px rgba(0,0,0,0.75);
+    transition: 0.4s;
+    z-index: 5;
+}
+.tgbox::before , .tgbox::after{
+    position: absolute;
+    content: "OFF";
+    color: #efefef;
+    font-size: 12px;
+    right: 5px;
+    top: 6px;
+}
+.tgbox::after{
+    content: "ON";
+    right: auto;
+    left: 5px;
+}
+.tgbox input[type=checkbox]{
+    opacity: 0;
+}
+.tgswitch {
+    position: absolute;
+    content: '';
+    left: 2px;
+    top: 1px;
+    width: 26px;
+    height: 26px;
+    background: var(--plain-white);
+    border-radius: 50%;
+    -webkit-box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.75);
+    transition: 0.3s;
+    z-index: 3;
+}
+.setting-toggole-button .bgColor{
+    background: var(--secondary-color);
+}
+.tgbox input[type=checkbox]:checked + .tgswitch{
+    transform: translateX(30px);
+}
+
+
+
+.settings-block-location .settings-block-feature {
+    background: var(--primary-lite);
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.settings-block-location select {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background: #eae8e8;
+    outline: none;
+}
+.toggle-bar-icon {
+    font-size: 30px;
+}

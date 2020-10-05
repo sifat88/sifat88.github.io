@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>ZUGANG4ALL</title>
+</head>
+<body>
+
+    <main>
+        <Section class="settings">
+            <div class="settings-header">
+                <div class="setting-icon">
+                    <img src="assets/img/settings.png" alt="" class="img-fuild">
+                </div>
+                <div class="setting-text">
+                    <h1>Einstellungen</h1>
+                </div>
+            </div>
+            <div class="settings-content">
+                <div class="settings-block settings-block-time">
+                    <div class="setting-toggole-button">
+                        <label for="tgButton1" id="tgbox1" class="tgbox">
+                            <input type="checkbox" name="tgButton1" id="tgButton1" data-toggle="collapse" data-target="#sBlock1">
+                            <span class="tgswitch"></span>
+                        </label>
+                        <div class="toggle-bar-icon d-none">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="settings-block-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="settings-block-header">
+                        <h3>Blaufilter-Automatismus nach Uhrzeit</h3>
+                    </div>
+                    <div  id="sBlock1" class="collapse">
+                        <div class="settings-block-feature">
+                            <label for="startTime" class="starttime">
+                                <input type="time" name="startTime" value="16:00" id="startTime">
+                                startzeit
+                            </label>
+                            <label for="endTime" class="endtime">
+                                <input type="time" name="endTime" value="08:00" id="endTime">
+                                endzeit
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings-block-cta">
+                        <a href="#" class="btn">Einstellung aktivieren</a>
+                    </div>
+                </div>
+                <div class="settings-block settings-block-location">
+                    <div class="setting-toggole-button">
+                        <label for="tgButton2" id="tgbox2" class="tgbox">
+                            <input type="checkbox" name="tgButton2" id="tgButton2" data-toggle="collapse" data-target="#sBlock2">
+                            <span class="tgswitch"></span>
+                        </label>
+                        <div class="toggle-bar-icon d-none">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <div class="settings-block-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="settings-block-header">
+                        <h3>Blaufilter-Automatismus nach Sonnenstand</h3>
+                    </div>
+                    <div id="sBlock2" class="collapse">
+                        <div class="settings-block-feature">
+                            <label for="locations">Dein Wohnort:</label>
+                            <select name="locations" id="locations">
+                                <option value="berlin">Berlin</option>
+                                <option value="Tokyo">Tokyo</option>
+                                <option value="Nairobi">Nairobi</option>
+                                <option value="Rio">Rio</option>
+                                <option value="Mosco">Mosco</option>
+                                <option value="Denver">Denver</option>
+                                <option value="Helsinki">Helsinki</option>
+                                <option value="Oslo">Oslo</option>
+                                <option value="Lisbon">Lisbon</option>
+                                <option value="Palermo">Palermo</option>
+                                <option value="Bogota">Bogota</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="settings-block-cta">
+                        <a href="#" class="btn">Einstellung aktivieren</a>
+                    </div>
+                </div>
+                <div class="settings-block">
+                    <div class="setting-toggole-button">
+                        <label for="tgButton3" id="tgbox3" class="tgbox">
+                            <input type="checkbox" name="tgButton3" id="tgButton3">
+                            <span class="tgswitch"></span>
+                        </label>
+                    </div>
+                    <div class="settings-block-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <div class="settings-block-cta">
+                        <a href="#" class="btn">Größerer Mouse-Cursor</a>
+                    </div>
+                </div>
+                <div class="settings-block">
+                    <div class="setting-toggole-button">
+                        <label for="tgButton4" id="tgbox4" class="tgbox">
+                            <input type="checkbox" name="tgButton4" id="tgButton4">
+                            <span class="tgswitch"></span>
+                        </label>
+                    </div>
+                    <div class="settings-block-icon">
+                        <i class="far fa-image"></i>
+                    </div>
+                    <div class="settings-block-cta">
+                        <a href="#" class="btn">Alle Bilder ausblenden</a>
+                    </div>
+                    
+                </div>
+                <div class="settings-block">
+                    <div class="setting-toggole-button">
+                        <label for="tgButton5" id="tgbox5" class="tgbox">
+                            <input type="checkbox" name="tgButton5" id="tgButton5">
+                            <span class="tgswitch"></span>
+                        </label>
+                    </div>
+                    <div class="settings-block-icon">
+                        <i class="fas fa-photo-video"></i>
+                    </div>
+                    <div class="settings-block-cta">
+                        <a href="#" class="btn">Alle Animationen ausblenden</a>
+                    </div>
+                    
+                </div>
+                <div class="settings-block">
+                    <div class="setting-toggole-button">
+                        <label for="tgButton6" id="tgbox6" class="tgbox">
+                            <input type="checkbox" name="tgButton6" id="tgButton6">
+                            <span class="tgswitch"></span>
+                        </label>
+                    </div>
+                    <div class="settings-block-icon">
+                        <i class="fas fa-volume-mute"></i>
+                    </div>
+                    <div class="settings-block-cta">
+                        <a href="#" class="btn">Ton/Audio ausschalten</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </Section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery-3.5.1.slim.min.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
