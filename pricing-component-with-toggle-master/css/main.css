@@ -38,7 +38,7 @@ main::after {
     position: absolute;
     content: '';
     left: 0px;
-    bottom: -145px;
+    bottom: -130px;
     width: 333px;
     height: 280px;
     background-image: url(../images/bg-bottom.svg);
