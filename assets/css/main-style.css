@@ -1,22 +1,3 @@
-/*
-* ----------------------------------------------------------------------------------------
-Author         : LionThemer
-Template Name  : GLOBE - Coming soon template
-Version        : 1.0                                          
-* ----------------------------------------------------------------------------------------
-*/
-
-
-/*
-* ----------------------------------------------------------------------------------------
-<#> Base style
-<#> All fonts
-<#> Preloader css
-<#> Drawer css
-<#> Main-content css
-<#> sub-content css
-* ----------------------------------------------------------------------------------------
-*/
 
 
 
@@ -381,6 +362,7 @@ Sub-content
 =================================*/
 .sub-content{
     text-align: center;
+    padding-top: 30px;
 }
 .sub-heading {
     font-family: 'antonioregular';
@@ -396,6 +378,7 @@ Sub-content
 .site-logo .logo {
     margin: 10px 10px;
     text-align: left;
+    margin-left: 45px;
 }
 .site-about{
     position: relative;
@@ -416,8 +399,11 @@ Sub-content
     color: #7c9fc6;
 }
 .site-about p {
-    padding: 0px 35px;
-    line-height: 24px;
+    padding: 0px 80px;
+    line-height: 28px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
 }
 .site-about p span {
     font-size: 16px;
@@ -427,6 +413,7 @@ Sub-content
 .site-contact {
     margin-top: 35px;
     text-align: left;
+    padding: 0px 100px;
 }
 .site-contact .form-control {
     margin: 0 auto;
@@ -496,11 +483,15 @@ Sub-content
 .site-copyright p i{
     margin-right: 5px;
 }
-.site-copyright p span{
+.site-copyright p span {
     text-transform: uppercase;
     font-family: 'antonioregular';
-    font-size: 20px;
+    font-size: 16px;
     color: #7c9fc6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0px 2px;
+    font-style: italic;
 }
 
 

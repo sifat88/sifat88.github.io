@@ -1,3 +1,5 @@
+/* ----- Some Base Style --------- */
+
 @font-face {font-family: "Avenir Black";
     src: url("../fonts/275de2221d9f0c4c9257d17f5a1e4006.eot"); /* IE9*/
     src: url("../fonts/275de2221d9f0c4c9257d17f5a1e4006.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
@@ -20,6 +22,8 @@ h1,h2,h3,h4,h5,h6,p,label{
 body{
     font-family: "Avenir Black";
 }
+
+/* ------- Contentent Style -------- */
 main{
       width: 350px;
       margin: 0 auto;
@@ -27,6 +31,7 @@ main{
       color: var(--plain-white);
       padding: 0px 20px;
 }
+/* ------- Settings Header -------- */
 .settings-header {
     display: flex;
     justify-content: center;
@@ -37,6 +42,7 @@ main{
 .setting-icon {
     margin-right: 10px;
 }
+/* ------- Settings-Block -------- */
 .settings-block {
     text-align: center;
     padding: 20px 0px 20px;
@@ -44,15 +50,12 @@ main{
     margin-bottom: 30px;
     transition: linear 0.4s;
 }
-.setting-toggole-button {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 15px;
-}
 .settings-block-icon {
     font-size: 60px;
     margin-bottom: 10px;
 }
+/* ------- settings-block-Header -------- */
+
 .settings-block-header {
     background: var(--primary-color);
     padding: 12px 8px;
@@ -61,12 +64,18 @@ main{
 .settings-block-header h3 {
     font-size: 22px;
 }
+
+/* ------- settings-block-feature -------- */
+
 .settings-block-feature {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
 }
+
+/* ------- settings-block-feature (Time) -------- */
+
 .starttime, .endtime {
     text-align: left;
     font-size: 20px;
@@ -89,6 +98,9 @@ input#startTime, input#endTime {
 input#startTime:focus, input#endTime:focus{
     outline: none;
 }
+
+/* ------- settings-block-Activte-Button-------- */
+
 .settings-block-cta{
     margin-top: 20px;
 }
@@ -98,6 +110,14 @@ input#startTime:focus, input#endTime:focus{
     width: 100%;
     padding: 10px 0px;
     font-size: 20px;
+}
+
+/* ------- settings-toggle-button -------- */
+
+.setting-toggole-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
 }
 .tgbox {
     align-self: center;
@@ -115,12 +135,13 @@ input#startTime:focus, input#endTime:focus{
 .tgbox::before , .tgbox::after{
     position: absolute;
     content: "OFF";
-    color: #efefef;
+    color: #afafaf;
     font-size: 12px;
     right: 5px;
     top: 6px;
 }
 .tgbox::after{
+    color: #efefef;
     content: "ON";
     right: auto;
     left: 5px;
@@ -140,7 +161,7 @@ input#startTime:focus, input#endTime:focus{
     -webkit-box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.75);
-    transition: 0.3s;
+    transition: 0.2s;
     z-index: 3;
 }
 .setting-toggole-button .bgColor{
@@ -150,7 +171,7 @@ input#startTime:focus, input#endTime:focus{
     transform: translateX(30px);
 }
 
-
+/* ------- settings-block-feature (Location) -------- */
 
 .settings-block-location .settings-block-feature {
     background: var(--primary-lite);
