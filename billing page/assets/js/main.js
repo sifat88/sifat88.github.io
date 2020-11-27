@@ -30,6 +30,7 @@ toogleList(showTvList, tvchanList);
 const netPacks = document.querySelectorAll("div.net-pack");
 const tvPacks = document.querySelectorAll("div.tv-pack");
 const voicePacks = document.querySelectorAll("div.voice-pack");
+const smrtHmePacks = document.querySelectorAll("div.smarthome-pack");
 
 
 const pkhdText = document.getElementById("phText");
@@ -40,31 +41,55 @@ const noDeal = document.getElementById("noDl");
 const netCheck = document.getElementById("netPack");
 const tvCheck = document.getElementById("tvPk");
 const voiceCheck = document.getElementById("voicePk");
-console.log(!netCheck.checked);
+const smrtHmeCheck = document.getElementById("smartHome");
+console.log(smrtHmePacks);
 
 
-netCheck.addEventListener("click", () => {
-    topPack.classList.toggle("hidden-pack");
-    netPacks.forEach( elm => {
-        elm.classList.toggle("hidden-pack");
-    })
-})
-tvCheck.addEventListener("click", () => {
-    tvPacks.forEach( elm => {
-        elm.classList.toggle("hidden-pack");
-    })
-})
-voiceCheck.addEventListener("click", () => {
-    voicePacks.forEach( elm => {
-        elm.classList.toggle("hidden-pack");
-    })
-})
+// netCheck.addEventListener("click", () => {
+//     topPack.classList.toggle("hidden-pack");
+//     netPacks.forEach( elm => {
+//         elm.classList.toggle("hidden-pack");
+//     })
+// })
+// tvCheck.addEventListener("click", () => {
+//     tvPacks.forEach( elm => {
+//         elm.classList.toggle("hidden-pack");
+//     })
+// })
+// voiceCheck.addEventListener("click", () => {
+//     voicePacks.forEach( elm => {
+//         elm.classList.toggle("hidden-pack");
+//     })
+// })
+// smrtHmeCheck.addEventListener("click", () => {
+//     smrtHmePacks.forEach( elm => {
+//         elm.classList.toggle("hidden-pack");
+//     })
+// })
+
+const filterFunc = (prm, param) => {
+    prm.addEventListener("click", () => {
+        if(prm === netCheck){
+            topPack.classList.toggle("hidden-pack");
+        } 
+        
+        param.forEach( elm => {
+            elm.classList.toggle("hidden-pack");
+        })
+    })  
+}
+filterFunc(netCheck, netPacks);
+filterFunc(tvCheck, tvPacks);
+filterFunc(voiceCheck, voicePacks);
+filterFunc(smrtHmeCheck, smrtHmePacks);
+
+
 window.addEventListener("click", () => {
-    if(!netCheck.checked && !tvCheck.checked && !voiceCheck.checked){
+    if(!netCheck.checked && !tvCheck.checked && !voiceCheck.checked && !smrtHmeCheck.checked){
         pkhdText.innerHTML = "Sorry! No offer Found";
         noDeal.classList.remove("hidden-pack");
     } else {
-        pkhdText.innerHTML = "6 Internet, TV and Voice offer";
+        pkhdText.innerHTML = "6 Internet, TV and Voice offers";
         noDeal.classList.add("hidden-pack");
     }
 })
