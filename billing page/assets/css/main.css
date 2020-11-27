@@ -1,0 +1,399 @@
+
+/* ----- Some Base Style --------- */
+
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Regular.woff2") format("woff2"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Regular.woff") format("woff"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+    --primary-color: #EEF1F3;
+    --secondary-color: #0272B6;
+}
+h1,h2,h3,h4,h5,h6,p,label,ul,ol{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "XfinityStandard";
+    background-color: var(--primary-color);
+}
+
+/* ------- Contentent Style -------- */
+
+/* +=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+=+=+=+
+    Color Correction menu start here
++=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+=+=+=+*/
+main {
+    margin-top: 25px;
+}
+.build-packages,
+.filter-packages {
+    background: #fff;
+    color: #191919;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.filter-headline {
+    padding: 18px 24px;
+    border-bottom: 3px solid var(--primary-color);
+}
+.cmn-checkbox-list {
+    padding: 14px 24px;
+    padding-bottom: 24px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.cmn-checkbox-list li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.cmn-checkbox-list li:last-of-type{
+    margin: 0px;
+}
+.cmn-checkbox {
+    display: flex;
+    align-items: center;
+}
+.cmn-checkbox label {
+    margin-left: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cmn-checkbox input[type="checkbox"] {
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    border: 1px solid #191919;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+.cmn-checkbox .checkbox-input::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 8px;
+    width: 8px;
+    height: 16px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    opacity: 0;
+    visibility: hidden;
+}
+.cmn-checkbox .checkbox-input:checked{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    outline: none;
+}
+.cmn-checkbox .checkbox-input:checked::after{
+    opacity: 1;
+    visibility: visible;
+}
+.cmn-checkbox .checkbox-input:focus{
+    outline: none;
+}
+.filter-by-internetSpeeds,
+.filter-by-tvChannels {
+    border-bottom: 3px solid var(--primary-color);
+}
+.filter-by-internetSpeeds .cmn-checkbox-list,
+.filter-by-tvChannels .cmn-checkbox-list {
+    display: none;
+}
+.filter-by-internetSpeeds .show-list,
+.filter-by-tvChannels .show-list {
+    display: block;
+}
+.filter-mini-headlne {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-mini-headlne span{
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    font-size: 14px;
+    cursor: pointer;
+}
+.filter-by-priceRange {
+    padding: 18px 24px;
+}
+.filter-by-priceRange > p {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.filter-by-priceRange span {
+    display: block;
+    font-size: 14px;
+}
+.filter-by-priceRange .price-output {
+    display: block;
+    font-size: 16px;
+}
+.filter-by-priceRange .price-output span{
+    display: inline;
+}
+.cta-block {
+    background: #191919;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding: 25px 15px;
+}
+.cta-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.price-ranger{
+    position: relative;
+    margin-bottom: 15px;
+}
+.price-ranger input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    outline: none;
+    border: none;
+    background: #c9c9c9;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer; 
+}
+.price-ranger .rnger-bg{
+    position: absolute;
+    left: 0px;
+    top: 17px;
+    background: var(--secondary-color);
+    -webkit-appearance: none;
+    width: 90%;
+    height: 5px;
+    outline: none;
+    border-radius: 5px;
+}
+.price-ranger input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background:#fff;
+    border: 1px solid #646a70;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+
+.packages-header {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p-location-icon {
+    display: flex;
+    align-items: center;
+}
+.p-location-icon a{
+    margin-left: 10px;
+}
+.packages-sorting select {
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.packages-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    background: #fff;
+    padding: 18px 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.side-border {
+    border-left: 1px solid #dde2e6;
+    padding-left: 10px;
+}
+.single-package {
+    background: #FBFCFC;
+    margin-top: 20px;
+    border-radius: 3px;
+    border-top: 3px solid var(--secondary-color);
+}
+.package-info {
+    border-right: 1px solid #dde2e6;
+}
+.package-info-text {
+    background: #fff;
+    padding: 10px 15px;
+    padding-top: 20px;
+    border-bottom: 1px solid #dde2e6;
+}
+.ptext {
+    font-size: 14px;
+    color: #44484c;
+}
+.ptext span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.package-includes {
+    background: #fff;
+    padding: 25px 15px;
+    border-bottom: 1px solid #dde2e6;
+}
+.package-includes p {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.package-includes > ul {
+    padding-left: 20px;   
+    list-style-type: disc;
+}
+.package-includes > ul > li {
+    padding-right: 20px;
+    font-size: 13px;
+    position: relative;
+}
+/* .package-includes ul li::before {
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    background-color: #191919;
+    border-radius: 50%;
+}
+.package-includes ul li:first-of-type::before{
+    display: none;
+} */
+.select-to-compare {
+    padding: 10px 15px;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+}
+.package-price-block {
+    padding: 12px 15px;
+    text-align: center;
+}
+.p-price{
+    text-align: center;
+}
+.p-price p {
+    font-size: 50px;
+    color: #44484c;
+    margin-top: -15px;
+}
+.p-price p sup,
+.p-price p sub {
+    font-size: 18px;
+}
+.p-price span{
+    font-size: 14px;
+    color: #44484c;
+}
+.p-select {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p-select select {
+    width: 80%;
+    padding: 8px 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.p-select svg {
+    flex-shrink: 0;
+    height: 20px;
+    width: 20px;
+    color:var(--secondary-color);
+}
+.p-cta .cta-btn {
+    font-size: 14px;
+    padding: 10px 25px;
+    margin-top: 15px;
+}
+.p-cta a {
+    font-size: 14px;
+    display: block;
+    margin-top: 15px;
+}
+.top-single-package {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: 2px solid var(--secondary-color);
+}
+.package-top-text {
+    background: #5736CB;
+    color: #fff;
+    display: flex;
+    padding: 15px 10px;
+    border: none;
+    font-weight: bold;
+}
+.package-top-text span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--secondary-color);
+    background: #fff;
+    margin-right: 10px;
+}
+.package-media-list {
+    margin-top: 15px;
+}
+.package-media-list ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 24px;
+    height: 45px;
+    width: 60px;
+    color: var(--secondary-color);
+    border: 1px solid #dde2e6;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+    .side-border {
+        border-left: 0px;
+        border-top: 1px solid #dde2e6;
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .p-select {
+        justify-content: space-evenly;
+    }
+    .select-to-compare {
+        display: none;
+    }
+    .packages-sorting select {
+        padding: 10px 5px;
+    }
+}
