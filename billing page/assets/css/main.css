@@ -235,6 +235,7 @@ main {
     margin-top: 20px;
     border-radius: 3px;
     border-top: 3px solid var(--secondary-color);
+    transition: 0.3s;
 }
 .package-info {
     border-right: 1px solid #dde2e6;
@@ -378,7 +379,20 @@ main {
     margin-right: 6px;
 }
 
-
+.offer-not-founded {
+    font-size: 30px;
+    color: #595858;
+    text-align: center;
+    visibility: visible;
+    appearance: auto;
+    opacity: 1;
+}
+.offer-not-founded svg {
+    display: block;
+    font-size: 60px;
+    margin: 15px auto;
+    color: #595858;
+}
 
 @media only screen and (max-width: 768px) { 
     .side-border {
@@ -396,4 +410,13 @@ main {
     .packages-sorting select {
         padding: 10px 5px;
     }
+}
+/* =============== Don't Move ============= */
+.hidden-pack{
+    visibility: hidden;
+    appearance: none;
+    opacity: 0;
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
 }

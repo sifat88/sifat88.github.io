@@ -23,20 +23,20 @@
                             <ul class="cmn-checkbox-list">
                                 <li>
                                     <div class="cmn-checkbox">
-                                        <input type="checkbox" name="internet" id="internet" class="checkbox-input">
-                                        <label for="internet">internet</label>
+                                        <input type="checkbox" name="internet" id="netPack" class="checkbox-input" checked>
+                                        <label for="netPack">internet</label>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cmn-checkbox">
-                                        <input type="checkbox" name="tv" id="tv" class="checkbox-input">
-                                        <label for="tv">tv</label>
+                                        <input type="checkbox" name="tv" id="tvPk" class="checkbox-input" checked>
+                                        <label for="tvPk">tv</label>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cmn-checkbox">
-                                        <input type="checkbox" name="phone" id="phone" class="checkbox-input">
-                                        <label for="phone">phone</label>
+                                        <input type="checkbox" name="phone" id="voicePk" class="checkbox-input" checked>
+                                        <label for="voicePk">phone</label>
                                     </div>
                                 </li>
                             </ul>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="packages">
-                        <div class="single-package top-single-package">
+                        <div id="topPK" class="single-package top-single-package">
                             <div class="package-top-text">
                                 <span><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -225,7 +225,7 @@
                         </div>
                         <div class="packages-header">
                             <div class="packages-header-text">
-                                <p>6 Internet, TV and Voice offers</p>
+                                <p id="phText">6 Internet, TV and Voice offers</p>
                                 <div class="p-location-icon">
                                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
@@ -263,7 +263,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-package">
+                        <div class="single-package net-pack">
                             <div class="row no-gutters">
                                 <div class="col-lg-9">
                                     <div class="package-info">
@@ -331,7 +331,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-package">
+                        <div class="single-package net-pack">
                             <div class="row no-gutters">
                                 <div class="col-lg-9">
                                     <div class="package-info">
@@ -399,7 +399,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-package">
+                        <div class="single-package tv-pack">
                             <div class="row no-gutters">
                                 <div class="col-lg-9">
                                     <div class="package-info">
@@ -467,7 +467,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-package">
+                        <div class="single-package voice-pack">
                             <div class="row no-gutters">
                                 <div class="col-lg-9">
                                     <div class="package-info">
@@ -534,6 +534,286 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="single-package net-pack">
+                            <div class="row no-gutters">
+                                <div class="col-lg-9">
+                                    <div class="package-info">
+                                        <div class="package-info-text">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="ptext">
+                                                        <p><span>Up to 200 Mbps </span>Download Speeds</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="ptext side-border">
+                                                        <p><span>130+</span>Channels</p>
+                                                        <a href="#">View Channels</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="ptext side-border">
+                                                        <p>Unlimited calling nationwide + nearly half the world</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="package-includes">
+                                            <p>STANDARD+ MORE INCLUDES:</p>
+                                            <ul>
+                                                <li>$100 Visa® Prepaid Card</li>
+                                                <li>Free Getting Started Kit and shipping</li>
+                                                <li>HD included</li>
+                                                <li>Talk as much as you want to nearly half the world</li>
+                                            </ul>
+                                        </div>
+                                        <div class="select-to-compare">
+                                            <div class="cmn-checkbox">
+                                                <input type="checkbox" name="selectToCompare" id="selectToCompare" class="checkbox-input">
+                                                <label for="selectToCompare">select To Compare</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="package-price-block">
+                                        <div class="p-price">
+                                            <p><sup>$</sup>89<sup>.99/mo</sup></p>
+                                            <span>for the first 24 months</span>
+                                        </div>
+                                        <div class="p-select">
+                                            <select class="" id="" name="">
+                                                <option value="">2-Year Agreement</option>
+                                                <option value="">No Term Agreement</option>
+                                             </select>
+                                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-square" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                                                <circle cx="8" cy="4.5" r="1"/>
+                                              </svg>
+                                        </div>
+                                        <div class="p-cta">
+                                            <button type="button" class="cta-btn btn">Check Availability</button>
+                                            <a href="#">Pricing & Other Info</a>
+                                            <a href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-package net-pack">
+                            <div class="row no-gutters">
+                                <div class="col-lg-9">
+                                    <div class="package-info">
+                                        <div class="package-info-text">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="ptext">
+                                                        <p><span>Up to 200 Mbps </span>Download Speeds</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="ptext side-border">
+                                                        <p><span>130+</span>Channels</p>
+                                                        <a href="#">View Channels</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="ptext side-border">
+                                                        <p>Unlimited calling nationwide + nearly half the world</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="package-includes">
+                                            <p>STANDARD+ MORE INCLUDES:</p>
+                                            <ul>
+                                                <li>$100 Visa® Prepaid Card</li>
+                                                <li>Free Getting Started Kit and shipping</li>
+                                                <li>HD included</li>
+                                                <li>Talk as much as you want to nearly half the world</li>
+                                            </ul>
+                                        </div>
+                                        <div class="select-to-compare">
+                                            <div class="cmn-checkbox">
+                                                <input type="checkbox" name="selectToCompare" id="selectToCompare" class="checkbox-input">
+                                                <label for="selectToCompare">select To Compare</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="package-price-block">
+                                        <div class="p-price">
+                                            <p><sup>$</sup>89<sup>.99/mo</sup></p>
+                                            <span>for the first 24 months</span>
+                                        </div>
+                                        <div class="p-select">
+                                            <select class="" id="" name="">
+                                                <option value="">2-Year Agreement</option>
+                                                <option value="">No Term Agreement</option>
+                                             </select>
+                                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-square" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                                                <circle cx="8" cy="4.5" r="1"/>
+                                              </svg>
+                                        </div>
+                                        <div class="p-cta">
+                                            <button type="button" class="cta-btn btn">Check Availability</button>
+                                            <a href="#">Pricing & Other Info</a>
+                                            <a href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-package tv-pack">
+                            <div class="row no-gutters">
+                                <div class="col-lg-9">
+                                    <div class="package-info">
+                                        <div class="package-info-text">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="ptext">
+                                                        <p><span>Up to 200 Mbps </span>Download Speeds</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="ptext side-border">
+                                                        <p><span>130+</span>Channels</p>
+                                                        <a href="#">View Channels</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="ptext side-border">
+                                                        <p>Unlimited calling nationwide + nearly half the world</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="package-includes">
+                                            <p>STANDARD+ MORE INCLUDES:</p>
+                                            <ul>
+                                                <li>$100 Visa® Prepaid Card</li>
+                                                <li>Free Getting Started Kit and shipping</li>
+                                                <li>HD included</li>
+                                                <li>Talk as much as you want to nearly half the world</li>
+                                            </ul>
+                                        </div>
+                                        <div class="select-to-compare">
+                                            <div class="cmn-checkbox">
+                                                <input type="checkbox" name="selectToCompare" id="selectToCompare" class="checkbox-input">
+                                                <label for="selectToCompare">select To Compare</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="package-price-block">
+                                        <div class="p-price">
+                                            <p><sup>$</sup>89<sup>.99/mo</sup></p>
+                                            <span>for the first 24 months</span>
+                                        </div>
+                                        <div class="p-select">
+                                            <select class="" id="" name="">
+                                                <option value="">2-Year Agreement</option>
+                                                <option value="">No Term Agreement</option>
+                                             </select>
+                                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-square" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                                                <circle cx="8" cy="4.5" r="1"/>
+                                              </svg>
+                                        </div>
+                                        <div class="p-cta">
+                                            <button type="button" class="cta-btn btn">Check Availability</button>
+                                            <a href="#">Pricing & Other Info</a>
+                                            <a href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-package voice-pack">
+                            <div class="row no-gutters">
+                                <div class="col-lg-9">
+                                    <div class="package-info">
+                                        <div class="package-info-text">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="ptext">
+                                                        <p><span>Up to 200 Mbps </span>Download Speeds</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="ptext side-border">
+                                                        <p><span>130+</span>Channels</p>
+                                                        <a href="#">View Channels</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="ptext side-border">
+                                                        <p>Unlimited calling nationwide + nearly half the world</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="package-includes">
+                                            <p>STANDARD+ MORE INCLUDES:</p>
+                                            <ul>
+                                                <li>$100 Visa® Prepaid Card</li>
+                                                <li>Free Getting Started Kit and shipping</li>
+                                                <li>HD included</li>
+                                                <li>Talk as much as you want to nearly half the world</li>
+                                            </ul>
+                                        </div>
+                                        <div class="select-to-compare">
+                                            <div class="cmn-checkbox">
+                                                <input type="checkbox" name="selectToCompare" id="selectToCompare" class="checkbox-input">
+                                                <label for="selectToCompare">select To Compare</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="package-price-block">
+                                        <div class="p-price">
+                                            <p><sup>$</sup>89<sup>.99/mo</sup></p>
+                                            <span>for the first 24 months</span>
+                                        </div>
+                                        <div class="p-select">
+                                            <select class="" id="" name="">
+                                                <option value="">2-Year Agreement</option>
+                                                <option value="">No Term Agreement</option>
+                                             </select>
+                                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                                                <circle cx="8" cy="4.5" r="1"/>
+                                              </svg>
+                                        </div>
+                                        <div class="p-cta">
+                                            <button type="button" class="cta-btn btn">Check Availability</button>
+                                            <a href="#">Pricing & Other Info</a>
+                                            <a href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="noDl" class="offer-not-founded hidden-pack">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-frown" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path fill-rule="evenodd" d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683z"/>
+                                <path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                              </svg>
+                            We don’t have anything quite like that, but you might be interested in these similar offers available in your neighborhood.
                         </div>
                     </div>
                 </div>
