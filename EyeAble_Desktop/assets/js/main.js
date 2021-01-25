@@ -65,16 +65,20 @@ Blaufilter.addEventListener("input", (e)=> {
 const Farbschwachefilterblk = document.getElementById("eyeAbleFarbschwachefilterBlock");
 const Farbschwachefilter = document.getElementById("eyeAbleFarbschwachefilter");
 const FarbschwachefilterBG = document.getElementById("eyeAbleFarbschwachefilterBG");
+const FarbschwachefilterCancel = document.getElementById("Farbschwachefiltercancel");
 
-Farbschwachefilterblk.addEventListener("click", (e)=> {
+Farbschwachefilterblk.childNodes[3].addEventListener("click", (e)=> {
     Farbschwachefilterblk.classList.add("eyeAbleFilterActive");
 })
 
 Farbschwachefilter.addEventListener("input", (e)=> {
     FarbschwachefilterBG.style.width = e.target.value + '%';
-    e.target.parentNode.childNodes[5].innerHTML = "Stärke: " + e.target.value + "%";
+    e.target.parentNode.childNodes[5].childNodes[3].innerHTML = "Stärke: " + e.target.value + "%";
+    e.target.parentNode.childNodes[5].classList.toggle('eyeAble_filtervauletoggle');
 })
-
+FarbschwachefilterCancel.addEventListener("click", (e)=> {
+    Farbschwachefilterblk.classList.remove("eyeAbleFilterActive");
+})
 // ScreenReader toggle ====================//
 const SRSIcon = document.getElementById("srIcon");
 const SRSContent = document.getElementById("srsContent");
@@ -88,7 +92,12 @@ SRbtn.addEventListener("click" , ()=> {
     SRbtn.classList.toggle("eyeAble_sr-readingactive");
 })
 
+const playPause = document.querySelector("button.eyeAble_Play_Pause");
 
+playPause.addEventListener("click" , (e) => {
+    e.preventDefault;
+    playPause.classList.toggle("active_playPause");
+})
 // ColorWeeknessRanger toggle ====================//
 
 const colorweeknessText = document.querySelectorAll("p.eyeAble_colorweakness-text");
