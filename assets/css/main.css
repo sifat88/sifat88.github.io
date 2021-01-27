@@ -492,7 +492,91 @@ footer {
 /* =================================================================== */
 /* ======================= RESPONSIVE CSS ============================ */
 /* =================================================================== */
+@media only screen and (min-width:1024px) and (max-width:1360px){
+    .welcome-text > h1 > span {
+        font-size: 50px;
+    }
+    .welcome-img {
+        width: 400px;
+        height: 400px;
+    }
+    .project-buttons {
+        padding-top: 0px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .project-buttons > .btn{
+        margin: 0px 10px;
+    }
+    .projects {
+        height: auto;
+        padding: 70px 0px;
+    }
+    .single-project:hover .project-view .project-viewlinks > a:first-of-type {
+        left: 65px;
+    }
+    .single-project:hover .project-view .project-viewlinks > a:last-of-type {
+        right: 65px;
+    }
+    .about {
+        height: auto;
+        padding: 100px 0px;
+        background-position: right bottom;
+    }
+    .skill-list {
+        width: 65%;
+        margin-top: 50px;
+    }
+    footer{
+        background-position: 20% 50%;
+    }
+}
 @media only screen and (min-width:768px) and (max-width:1023px){
+    header{
+        height: auto;
+    }
+    .welcome-text {
+        text-align: center;
+    }
+    .welcome-text > h1 > span {
+        font-size: 35px;
+    }
+    .welcome-img {
+        width: 300px;
+        height: 300px;
+    }
+    .project-buttons {
+        padding-top: 0px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .project-buttons > .btn{
+        margin: 0px 10px;
+    }
+    .projects {
+        height: auto;
+        padding: 70px 0px;
+    }
+    .single-project:hover .project-view .project-viewlinks > a:first-of-type {
+        left: 15px;
+    }
+    .single-project:hover .project-view .project-viewlinks > a:last-of-type {
+        right: 15px;
+    }
+    .about {
+        height: auto;
+        padding: 100px 0px;
+        background-position: right bottom;
+        background-size: 315px;
+    }
+    .skill-list {
+        width: 65%;
+        margin-top: 40px;
+    }
+    footer {
+        background-position: 90% 50%;
+        background-size: 325px;
+    }
     
 }
 
@@ -500,8 +584,9 @@ footer {
 
 @media only screen and (min-width:320px) and (max-width:767px){
     header {
+        position: relative;
         height: auto;
-        padding: 100px 0px 200px;
+        padding: 70px 0px 200px;
     }
     .welcome-text > h1 > span {
         font-size: 35px;
@@ -514,7 +599,7 @@ footer {
         position: absolute;
         left: 50%;
         margin-left: -150px;
-        bottom: 200px;
+        bottom: -150px;
     }
     .projects {
         height: auto;
@@ -532,6 +617,12 @@ footer {
         grid-template-columns: 95%;
         grid-gap: 5% 5%;
     }
+    .single-project:hover .project-view .project-viewlinks > a:first-of-type {
+        left: 35px;
+    }
+    .single-project:hover .project-view .project-viewlinks > a:last-of-type {
+        right: 35px;
+    }
     .about {
         height: auto;
         padding: 100px 0px;
@@ -545,8 +636,8 @@ footer {
     }
     footer {
         padding: 0px 0px;
-        background-position: 50% 65%;
-        background-size: 350px;
+        background-position: 50% 75%;
+        background-size: 300px;
     }
     .footer-text {
         padding: 70px 0px 50px;
@@ -560,7 +651,7 @@ footer {
         padding: 5px 30px;
         border-radius: 3px;
         margin-top: 15px;
-        margin-bottom: 450px;
+        margin-bottom: 57vh;
     }
     .social-link{
         text-align: center;
@@ -598,5 +689,27 @@ footer {
     }
 }
 @media only screen and (min-width:420px) and (max-width:767px){
-    
+    .welcome-text {
+        text-align: center;
+    }
+    .project-buttons {
+        display: block;
+        padding-top: 0px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .project-buttons > .btn{
+        margin: 0px 10px;
+    }
+    .footer-text {
+        width: 65%;
+        margin-right: 0px;
+        margin-left: auto;
+    }
+    .footer-text > .btn {
+        margin-bottom: 20vh;
+    }
+    footer {
+        background-position: 0% 75%;
+    }
 }
