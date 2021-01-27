@@ -1,70 +1,59 @@
-/*
-* ----------------------------------------------------------------------------------------
-Author         : LionThemer
-Template Name  : GLOBE - Coming soon template
-Version        : 1.0                                          
-* ----------------------------------------------------------------------------------------
-*/
+const siteNav = document.querySelector("div.site-navigation");
+const header = document.querySelector("header#welcome");
+const welcomeImg = document.querySelector("div.welcome-img");
+const navLInks = document.querySelectorAll("div.site-navigation > nav > ul > li > a");
+const navToggler = document.getElementById("navToggle");
 
-(function ($) {
-    'use strict';
+window.addEventListener("load" , (e) => {
+    e.preventDefault;
+    setTimeout(() => {
+        siteNav.style.transform = "scale(1)";
+    },500)
+})
+navToggler.addEventListener("click", (e)=> {
+    e.preventDefault;
+    navToggler.parentNode.classList.toggle("nav-active");
+})
+navLInks.forEach((elm)=> {
+    elm.addEventListener('click', (e)=> {
+        setTimeout(()=>{
+            siteNav.classList.remove("nav-active")
+        }, 500);
+    })
+})
+welcomeImg.addEventListener('mouseover', (e) => {
+    header.classList.add('header-hover');
+})
+welcomeImg.addEventListener('mouseout', (e) => {
+    header.classList.remove('header-hover');
+})
 
-    jQuery(document).ready(function () {
-        /*====================================================
-           Place any jQuery/helper plugins in here.
-        =====================================================*/
+const allBtn = document.getElementById('allWork');
+const funBtn = document.getElementById('myWork');
+const clientBtn = document.getElementById('clientWork');
 
-        /*-----------> Countdown <-------------*/
+const allWrk = document.querySelectorAll('div.single-project');
+const myWrk = document.querySelectorAll('div.single-project.fun-project');
+const clWrk = document.querySelectorAll('div.single-project.client-project');
 
-        $("#site-counter").countdown("2019/01/01", function (cn) {
-            $(this).html(cn.strftime("<div class='single-count'><span>%D</span> days </div>" + "<div class='single-count'><span>%H</span> hour </div>" + "<div class='single-count'><span>%M</span> min </div>" + "<div class='single-count'><span>%S</span> sec </div>"));
-        });
-
-        /*-----------> Drawer js <-------------*/
-
-        $('.drawer').drawer({
-            class: {
-                nav: 'drawer-nav',
-                    toggle: 'drawer-toggle',
-                    overlay: 'drawer-overlay',
-                    open: 'drawer-open',
-                    close: 'drawer-close',
-                    dropdown: 'drawer-dropdown'
-            },
-            iscroll: {
-                mouseWheel: true,
-                preventDefault: false
-            },
-            showOverlay: true
-        });
-
-        /*-----------> wow js <-------------*/
-
-        var wow = new WOW({
-            boxClass: 'wow', // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset: 0, // distance to the element when triggering the animation (default is 0)
-            mobile: true, // trigger animations on mobile devices (default is true)
-            live: true, // act on asynchronously loaded content (default is true)
-            callback: function (box) {
-                // the callback is fired every time an animation is started
-                // the argument that is passed in is the DOM node being animated
-            },
-            scrollContainer: null, // optional scroll container selector, otherwise use window,
-            resetAnimation: true, // reset animation on end (default is true)
-        });
-        wow.init();
-
-    });
-
-    // preloader
-
-    $(window).on('load', function () { // makes sure the whole site is loaded
-
-        $('.spinner').fadeOut(); // will first fade out the loading animation
-
-        $('#preldr').delay(200).fadeOut('slow').remove(); // will fade out the white DIV that covers the website.
-
-    });
-
-})(jQuery);
+clientBtn.addEventListener('click',() => {
+    clWrk.forEach(elm => {
+        elm.classList.remove('hide-project');
+    })
+    myWrk.forEach(elm => {
+        elm.classList.add('hide-project');
+    })
+})
+funBtn.addEventListener('click',() => {
+    myWrk.forEach(elm => {
+        elm.classList.remove('hide-project');
+    })
+    clWrk.forEach(elm => {
+        elm.classList.add('hide-project');
+    })
+})
+allBtn.addEventListener('click',() => {
+    allWrk.forEach(elm => {
+        elm.classList.remove('hide-project');
+    })
+})
