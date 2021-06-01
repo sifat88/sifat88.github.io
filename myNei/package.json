@@ -1,0 +1,14 @@
+{
+  "name": "my-neighbor",
+  "version": "1.0.0",
+  "description": "A api based web app to find countries who shared the same border with your home country.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Md. Rakibul Islam Sifat",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  }
+}

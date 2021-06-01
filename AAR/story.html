@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,161 +9,162 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>AAR Enterprise LLC</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        main {
+            width: 500px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: green;
+        }
+        .d-tringle{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: -120px;
+            width: 0; 
+            height: 0; 
+            border-top: 190px solid transparent;
+            border-bottom: 190px solid transparent; 
+            border-left:190px solid #E52D27;
+            animation: border 1.8s both;
+            z-index: 99;
+        }
+        .flag {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #000;
+    position: relative;
+    animation: bounce 1.8s both;
+    overflow: hidden;
+}
+.d-1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.d-1::after, .d-1::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 33.333%;
+    background-color: green;
+    z-index: 9;
+}
+.d-1::after{
+    bottom: 33.333%;
+    background-color: #fff;
+}
+
+/**
+ * ----------------------------------------
+ * animation bounce-in-top
+ * ----------------------------------------
+ */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+      width: 500px;
+      height: 300px;
+      border-radius: 0%;
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes border {
+  95% {
+    border-width: 190px;
+    top: -120px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+      top: 0px;
+     border-width: 150px;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
 </head>
 <body>
-
-    <header>
-        <div class="container-fluid">
-            <nav class="white-nav">
-                <div class="site-logo">
-                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 600.672 277.632" viewBox="0 0 550.1 282.46" xmlns="http://www.w3.org/2000/svg" data-type="ugc" role="img" aria-labelledby="svgcid-bzjzyl-2vkw89"><title id="svgcid-bzjzyl-2vkw89"></title>
-                        <g>
-                            <g>
-                                <g>
-                                    <g>
-                                        <g>
-                                            <g>
-                                                <g>
-                                                    <g>
-                                                        <g>
-                                                            <path d="M245.84 81.77L264.55 63l29.87-29.87 6.8-6.81-3 2.33.42-.27-3.57 1.5.48-.09h-7.95l.48.09-3.57-1.5.42.27-3-2.33 16 16 38.19 38.37 46.3 46.3L422.47 167c6.48 6.5 12.9 13.08 19.41 19.41l.29.27c5.52 5.54 15.67 6 21.12 0a15.2 15.2 0 0 0 0-21.12l-7.72-7.72-20-20-28.1-28.1-31.41-31.39-30.56-30.56-25-25-15.07-15c-.8-.82-1.6-1.66-2.45-2.45A16.43 16.43 0 0 0 283.18 3a20.86 20.86 0 0 0-3.34 2.66c-.9.85-1.75 1.74-2.63 2.61L250.48 35l-24.34 24.34-1.38 1.36c-5.52 5.54-6 15.67 0 21.13a15.24 15.24 0 0 0 21.14 0z" fill="#ffffff"></path>
-                                                            <path d="M143.24 159.82H18.49l4 .53h-.39l3.56 1.5-.33-.17 3 2.33-.26-.25 2.34 3-.18-.32 1.5 3.57-.09-.34.53 4v-.37l-.53 4 .11-.36-1.49 3.57.24-.31-2.33 3 15.59-15.6 37.47-37.48 45.33-45.32 39.18-39.18c6.32-6.31 12.77-12.54 19-19a3 3 0 0 1 .25-.25l-3 2.33.42-.27-3.57 1.49.46-.09h-7.93l.48.09-3.57-1.49.41.27-3-2.33 15.9 15.93 38.27 38.33 46.3 46.3L306.24 167c6.5 6.5 12.9 13.09 19.49 19.42l.27.27c5.54 5.54 15.66 6 21.13 0a15.2 15.2 0 0 0 0-21.12l-6.9-6.9-18.13-18L296.62 115l-29.53-29.38-29.33-29.36L212 30.53l-18.23-18.25c-2.33-2.33-4.6-4.78-7-7A16.2 16.2 0 0 0 173.31.79a16.68 16.68 0 0 0-9.47 4.48 1.29 1.29 0 0 0-.16.17c-.36.33-.69.67-1 1L158.09 11l-17.52 17.54-25.39 25.39-29.33 29.35-29.47 29.47-25.62 25.57L13.11 156l-4.75 4.74c-.36.37-.75.73-1.11 1.1a16.28 16.28 0 0 0 11.82 27.84h124.17c7.82 0 15.3-6.87 14.94-14.93a15.19 15.19 0 0 0-14.94-14.93z" fill="#ffffff"></path>
-                                                            <path d="M364.83 29.87h124.74l-14.93-14.93v47.79l14.93-14.94h-80.81a14.94 14.94 0 0 0-10.58 25.47l12.25 11.26 29.15 26.89 35.52 32.66 30.49 28c5 4.59 9.91 9.22 14.93 13.74l.21.2a15.73 15.73 0 0 0 10.56 4.37 15.19 15.19 0 0 0 10.56-4.38 14.94 14.94 0 0 0 0-21.12l-12.23-11.35-29.14-26.81L465 94.1l-30.49-28c-5-4.57-9.86-9.26-14.93-13.74l-.21-.19-10.61 25.5h80.81a15.16 15.16 0 0 0 14.94-14.94V14.94A15.14 15.14 0 0 0 489.57 0H364.83C357 0 349.54 6.87 349.9 14.94a15.19 15.19 0 0 0 14.93 14.93z" fill="#ffffff"></path>
-                                                        </g>
-                                                        <path d="M474.64 44.31v3.48h-3.42a3.4 3.4 0 0 0 2.61-1.19 4.4 4.4 0 0 0 .81-2.29z" fill="#ffffff"></path>
-                                                        <path d="M471.19 29.87h3.45v3.42a3.47 3.47 0 0 0-1.21-2.6 4.52 4.52 0 0 0-2.24-.82z" fill="#ffffff"></path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                            <text transform="translate(0 263.46)" style="isolation:isolate" font-size="64.87" font-family="OpenSans-Bold,Open Sans" font-weight="700" fill="#ffffff">
-                                                ENTERPRISES LLC
-                                            </text>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="nav-active"><a href="story.html">Our Story</a></li>
-                <li><a href="#">Collboration</a></li>
-                <li><a href="companies.html">Companies</a></li>
-                <li><a href="#">Career</a></li>
-            </ul>
-            </nav>
-            <div class="social-link">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="-0.002 0 23.893 23.91" viewBox="-0.002 0 23.893 23.91" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-labelledby="svgcid-ogvrdgg3hm4"><defs></defs><title id="svgcid-ogvrdgg3hm4"></title>
-                                <g>
-                                    <g>
-                                        <path d="M12.19 23.91H12c-1.87 0-3.6 0-5.29-.14a7.05 7.05 0 0 1-4.07-1.54 6.56 6.56 0 0 1-2.2-3.55A15.88 15.88 0 0 1 0 14.92V9a15.83 15.83 0 0 1 .39-3.76 6.52 6.52 0 0 1 2.2-3.55A7.05 7.05 0 0 1 6.66.15C8.35.05 10.08 0 12 0s3.6 0 5.29.15a7 7 0 0 1 4.07 1.54 6.46 6.46 0 0 1 2.2 3.55A15.33 15.33 0 0 1 23.88 9v6a15.75 15.75 0 0 1-.36 3.75 6.48 6.48 0 0 1-2.2 3.55 7.13 7.13 0 0 1-4.07 1.55c-1.61.02-3.25.06-5.06.06zM12 22.05c1.85 0 3.54-.05 5.19-.15a5.13 5.13 0 0 0 3-1.12 4.7 4.7 0 0 0 1.57-2.57 14.21 14.21 0 0 0 .3-3.32C22 14 22 13 22 12V9a14.25 14.25 0 0 0-.3-3.32 4.71 4.71 0 0 0-1.57-2.56 5.14 5.14 0 0 0-3-1.13c-1.65-.1-3.34-.14-5.18-.14s-3.54 0-5.18.14a5.14 5.14 0 0 0-3 1.13A4.71 4.71 0 0 0 2.2 5.7 14.25 14.25 0 0 0 1.9 9v5.87a14.21 14.21 0 0 0 .3 3.32 4.74 4.74 0 0 0 1.57 2.57 5.16 5.16 0 0 0 3 1.12c1.64.1 3.33.15 5.17.14zm0-4.25a5.84 5.84 0 1 1 5.75-5.8 5.84 5.84 0 0 1-5.84 5.84zm0-9.81a4 4 0 1 0 4 4 4 4 0 0 0-4-4zm6.4-3.74a1.4 1.4 0 1 0 1.4 1.4 1.4 1.4 0 0 0-1.4-1.4z" fill="#d9b430"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 13.5 27" viewBox="0 0 13.5 27" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-labelledby="svgcid-4l19zfk5s4h4"><defs></defs><title id="svgcid-4l19zfk5s4h4"></title>
-                                <g>
-                                    <g>
-                                        <path d="M11 4.48h2.5V.19A33.21 33.21 0 0 0 9.91 0c-3.56 0-6 2.24-6 6.34v3.78H0v4.8h3.92V27h4.81V14.92h3.76l.6-4.8H8.73v-3.3c0-1.39.37-2.34 2.27-2.34z" fill="#d9b430"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="-0.01 0 25.491 21.181" viewBox="-0.01 0 25.491 21.181" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-labelledby="svgcid-bsnboo-zw2a"><defs></defs><title id="svgcid-bsnboo-zw2a"></title>
-                                <g>
-                                    <g>
-                                        <path d="M25.11 2.47a10.11 10.11 0 0 1-1.76.59A5.47 5.47 0 0 0 24.8.76a.3.3 0 0 0-.19-.37.31.31 0 0 0-.23 0 10.19 10.19 0 0 1-2.69 1.11.5.5 0 0 1-.17 0 .69.69 0 0 1-.47-.18A5.54 5.54 0 0 0 17.41 0a5.7 5.7 0 0 0-1.74.27 5.35 5.35 0 0 0-3.6 3.84 6 6 0 0 0-.13 2 .18.18 0 0 1 0 .16.21.21 0 0 1-.17.07 14.47 14.47 0 0 1-9.91-5.3A.29.29 0 0 0 1.4 1l-.06.07a5.51 5.51 0 0 0 .89 6.69A4.65 4.65 0 0 1 1 7.29a.29.29 0 0 0-.39.12.2.2 0 0 0 0 .13 5.51 5.51 0 0 0 3.21 5.08 4.52 4.52 0 0 1-1-.09.29.29 0 0 0-.34.23.32.32 0 0 0 0 .14 5.52 5.52 0 0 0 4.36 3.75 10.24 10.24 0 0 1-5.69 1.73H.42a.43.43 0 0 0-.42.32.45.45 0 0 0 .21.48 15.07 15.07 0 0 0 7.59 2 15.4 15.4 0 0 0 6.48-1.37A14.3 14.3 0 0 0 19 16.29a15.5 15.5 0 0 0 2.9-4.86 15.4 15.4 0 0 0 1-5.33V6a1 1 0 0 1 .35-.73 10.87 10.87 0 0 0 2.19-2.4.3.3 0 0 0-.09-.4.27.27 0 0 0-.24 0z" fill="#d9b430"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
     <main>
-        <section class="home__section story__section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="welcome__block--left">
-                            <div class="owner__img">
-                                <img src="assets/img/owner.webp" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="welcome__block--right">
-                            <div class="section__text">
-                                <h1>Our Story</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum pariatur laboriosam enim optio id ipsa, debitis maxime beatae voluptate dolore distinctio autem possimus sed totam corrupti eos voluptas exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cumque quisquam dolorem quia esse omnis voluptatem repellendus! Officiis pariatur perspiciatis, commodi animi in corrupti natus explicabo non accusantium expedita eaque.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+     <div class="flag">
+         <div class="d-1">
+             <div class="d-tringle"></div>
+         </div>
+     </div>
     </main>
-    <footer>
-        <div class="container-fluid">
-            <ul class="footer-list">
-                <li><a href="mailto:info@aar.ae">info@aar.ae</a></li>
-                <li><a href="tel:+97124567895">Tel : +97124567895</a></li>
-                <li><a href="tel:+97124567895">Abu Dhabi, Airport Rd, Block 4, Building 5, Floor 13, 1304</a></li>
-            </ul>
-            <div class="footer-text">
-                <div class="social-link">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <svg preserveAspectRatio="xMidYMid meet" data-bbox="-0.002 0 23.893 23.91" viewBox="-0.002 0 23.893 23.91" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-labelledby="svgcid-ogvrdgg3hm4"><defs></defs><title id="svgcid-ogvrdgg3hm4"></title>
-                                    <g>
-                                        <g>
-                                            <path d="M12.19 23.91H12c-1.87 0-3.6 0-5.29-.14a7.05 7.05 0 0 1-4.07-1.54 6.56 6.56 0 0 1-2.2-3.55A15.88 15.88 0 0 1 0 14.92V9a15.83 15.83 0 0 1 .39-3.76 6.52 6.52 0 0 1 2.2-3.55A7.05 7.05 0 0 1 6.66.15C8.35.05 10.08 0 12 0s3.6 0 5.29.15a7 7 0 0 1 4.07 1.54 6.46 6.46 0 0 1 2.2 3.55A15.33 15.33 0 0 1 23.88 9v6a15.75 15.75 0 0 1-.36 3.75 6.48 6.48 0 0 1-2.2 3.55 7.13 7.13 0 0 1-4.07 1.55c-1.61.02-3.25.06-5.06.06zM12 22.05c1.85 0 3.54-.05 5.19-.15a5.13 5.13 0 0 0 3-1.12 4.7 4.7 0 0 0 1.57-2.57 14.21 14.21 0 0 0 .3-3.32C22 14 22 13 22 12V9a14.25 14.25 0 0 0-.3-3.32 4.71 4.71 0 0 0-1.57-2.56 5.14 5.14 0 0 0-3-1.13c-1.65-.1-3.34-.14-5.18-.14s-3.54 0-5.18.14a5.14 5.14 0 0 0-3 1.13A4.71 4.71 0 0 0 2.2 5.7 14.25 14.25 0 0 0 1.9 9v5.87a14.21 14.21 0 0 0 .3 3.32 4.74 4.74 0 0 0 1.57 2.57 5.16 5.16 0 0 0 3 1.12c1.64.1 3.33.15 5.17.14zm0-4.25a5.84 5.84 0 1 1 5.75-5.8 5.84 5.84 0 0 1-5.84 5.84zm0-9.81a4 4 0 1 0 4 4 4 4 0 0 0-4-4zm6.4-3.74a1.4 1.4 0 1 0 1.4 1.4 1.4 1.4 0 0 0-1.4-1.4z" fill="#d9b430"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 13.5 27" viewBox="0 0 13.5 27" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-labelledby="svgcid-4l19zfk5s4h4"><defs></defs><title id="svgcid-4l19zfk5s4h4"></title>
-                                    <g>
-                                        <g>
-                                            <path d="M11 4.48h2.5V.19A33.21 33.21 0 0 0 9.91 0c-3.56 0-6 2.24-6 6.34v3.78H0v4.8h3.92V27h4.81V14.92h3.76l.6-4.8H8.73v-3.3c0-1.39.37-2.34 2.27-2.34z" fill="#d9b430" ></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg preserveAspectRatio="xMidYMid meet" data-bbox="-0.01 0 25.491 21.181" viewBox="-0.01 0 25.491 21.181" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-labelledby="svgcid-bsnboo-zw2a"><defs></defs><title id="svgcid-bsnboo-zw2a"></title>
-                                    <g>
-                                        <g>
-                                            <path d="M25.11 2.47a10.11 10.11 0 0 1-1.76.59A5.47 5.47 0 0 0 24.8.76a.3.3 0 0 0-.19-.37.31.31 0 0 0-.23 0 10.19 10.19 0 0 1-2.69 1.11.5.5 0 0 1-.17 0 .69.69 0 0 1-.47-.18A5.54 5.54 0 0 0 17.41 0a5.7 5.7 0 0 0-1.74.27 5.35 5.35 0 0 0-3.6 3.84 6 6 0 0 0-.13 2 .18.18 0 0 1 0 .16.21.21 0 0 1-.17.07 14.47 14.47 0 0 1-9.91-5.3A.29.29 0 0 0 1.4 1l-.06.07a5.51 5.51 0 0 0 .89 6.69A4.65 4.65 0 0 1 1 7.29a.29.29 0 0 0-.39.12.2.2 0 0 0 0 .13 5.51 5.51 0 0 0 3.21 5.08 4.52 4.52 0 0 1-1-.09.29.29 0 0 0-.34.23.32.32 0 0 0 0 .14 5.52 5.52 0 0 0 4.36 3.75 10.24 10.24 0 0 1-5.69 1.73H.42a.43.43 0 0 0-.42.32.45.45 0 0 0 .21.48 15.07 15.07 0 0 0 7.59 2 15.4 15.4 0 0 0 6.48-1.37A14.3 14.3 0 0 0 19 16.29a15.5 15.5 0 0 0 2.9-4.86 15.4 15.4 0 0 0 1-5.33V6a1 1 0 0 1 .35-.73 10.87 10.87 0 0 0 2.19-2.4.3.3 0 0 0-.09-.4.27.27 0 0 0-.24 0z" fill="#d9b430"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <p>© 2021 by ABM Solutions</p>
-            </div>
-        </div>
-    </footer>
+
     <!-- Main JS -->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

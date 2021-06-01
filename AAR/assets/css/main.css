@@ -63,6 +63,7 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
+    z-index: 9;
 }
 nav {
     padding-top: 28px;
@@ -87,19 +88,21 @@ nav > ul > li > a {
     color: var(--primary-color);
     border-top: 4px solid transparent;
 }
-nav > ul > li.nav-active > a {
+nav > ul > li > a.nav-active {
     color: var(--secondary-color);
     border-color: var(--secondary-color);
 }
 nav > ul > li > a:hover {
     border-color: var(--primary-color);
 }
-
-nav.white-nav  a {
-    color: #fff;
-    border-color: #fff;
+nav > ul > li > a.nav-active:hover {
+    border-color: var(--secondary-color);
 }
-nav.white-nav  a:hover {
+
+.white-header nav > ul > li > a {
+    color: #fff;
+}
+.white-header  nav > ul > li > a:hover {
     border-color: #fff;
 }
 header .social-link > ul > li{
@@ -115,10 +118,41 @@ header .social-link{
     height: 35px;
     fill: var(--primary-color);
 }
+nav > ul > li > a.nav-active {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.white-header .social-link > ul > li {
+    filter: brightness(0) invert(1);
+}
 /* ============================================= 
             Main
  ============================================= */
+ main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
 
+
+
+
+
+
+
+
+ 
 .home__section {
     background-image:url(../img/main_bg.webp);
     background-size: cover;
@@ -200,8 +234,15 @@ header .social-link{
 }
 /* ----------- Companies ------------ */
 .brand-block {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     padding: 20px 0px;
     background-color: var(--secondary-color);
+    width: 100%;
+}
+.brand-slider {
+    padding-bottom: 200px;
 }
 .brand-block img {
     width: 180px;
@@ -217,6 +258,10 @@ header .social-link{
     background-color: var(--primary-color);
     margin-right: 8px;
     margin-left: 8px;
+}
+/* ----------- Career Section ------------ */
+.career__section {
+    background-image: url(../img/career_bg.webp);
 }
 /* ============================================= 
             Footer
